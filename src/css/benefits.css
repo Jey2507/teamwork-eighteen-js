@@ -1,0 +1,17 @@
+
+.list-item-benefits {
+
+            width: 344px;
+            height: 270px;
+            flex-grow: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 64px;
+            padding: 24px;
+            border-radius: 20px;
+            background-color: #242527;
+        
+
+}
