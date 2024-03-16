@@ -126,6 +126,8 @@
 
   .projects-text {
     font-size: 44px;
+    max-width: 494px;
+    line-height: 100%;
   }
 
   .project-link-thumb {
@@ -171,11 +173,6 @@
 
   .technologies {
     margin-bottom: 223px;
-  }
-
-  .projects-text {
-    max-width: 494px;
-    line-height: 100%;
   }
 
   .project-link-thumb {
