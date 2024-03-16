@@ -1,6 +1,6 @@
 .hero-section{
     background-image:
-        url(../img/hero-background/background-mobile.png);
+        url(../img/hero-background/background.png);
     background-repeat: no-repeat; 
 }
 
@@ -20,8 +20,7 @@
 .hero-social-networks {
     display: flex;
     align-items: center;
-    position: bottom;
-    padding-top: 743px;
+    padding-top: 303px;
 }
 
 .hero-info-social {
@@ -70,26 +69,26 @@
 
     .hero-section {
             background-image:
-                url(../img/hero-background/backgound-tablet.png);
+                url(../img/hero-background/background.png);
+                background-size: cover;
         
     }
     .hero-social-networks{
-        margin-left: 263px;
-        width:473px;
-        height: 55px;
-        justify-content: right;
+        margin-left: 243px;
+        padding-top: 483px;
     }
         .hero-title {
             font-size: 90px;
             line-height: 90px;
+            width: 632px;
         }
 }
 
 @media screen and (min-width: 1440px) {
 .hero-section {
         background-image:
-            url(../img/hero-background/background-desktop.png);
-            background-position: 2000%;
+            url(../img/hero-background/background.png);
+        
     }
 
 .hero-title {
@@ -97,7 +96,8 @@
     width: 1084px;
 }
 .hero-social-networks {
-    margin-left: 935px;
+    margin-left: 915px;
+    padding-top: 473px;
     }
 }
 
