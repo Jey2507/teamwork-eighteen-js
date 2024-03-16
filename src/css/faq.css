@@ -43,18 +43,23 @@
 .icon-answer {
     display: block;
     flex-shrink: 0;
-    transition: stroke 250ms;
-
-    transition: transform .5s ease;
+    display: block;
+    flex-shrink: 0;
+    transition: stroke .5s, transform .5s ease;
 }
-
+.icon-answer rect, .icon-answer path{
+    transition: sroke .5s;
+}
 .title-item-list:hover,
 .title-item-list:active,
+.icon-answer:hover rect,
+.icon-answer:active rect,
 .icon-answer:hover path,
 .icon-answer:active path {
     color: #0041E8;
     stroke: #0041E8;
 }
+
 
 .text-item-list {
     font-family: inherit;
