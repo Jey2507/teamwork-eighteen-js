@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Portfolio </title>
+    <!-- plugins:css --> 
+    <link rel="stylesheet" href="/src/css/work_together.css" />
+    
+<section>
+  <h1>Let’s work together</h1>
+  <form id="contactForm">
+    <input
+      type="email"
+      id="email"
+      required
+      pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+      style="text-overflow: ellipsis"
+    />
+    <button type="submit">Send</button>
+  </form>
+
+  <div id="modal" style="display: none">
+    <p>Ваша заявка була успішно відправлена</p>
+  </div>
+</section>
+
+<script src ="/src/js/work_together.js"></script>
