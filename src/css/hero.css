@@ -1,0 +1,40 @@
+.hero-section {
+    background-color:linear-gradient(90.11deg, #1C1D20 49.69%, #001958 67.71%, #0041E8 99.91%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: unset;
+}
+
+.hero-title {
+    color: #FAFAFA;;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: -0.03em;
+    width: 343px;
+}
+
+.hero-social-networks {
+    display: flex;
+    align-items: center;
+}
+
+.hero-info-social {
+    display: flex;
+     gap: 12px;
+     margin-left: 87px;
+}
+
+.hero-list-sociall {
+        border-radius: 15px;
+    border-style: solid;
+    border-color:#FAFAFA33;
+    border-width: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
