@@ -7,6 +7,8 @@ const toggleCloseMenu = document.getElementById('MenuCloseId');
 toggleElement.addEventListener('click', toggleMenu);
 toggleCloseMenu.addEventListener('click', closeMenu);
 document.getElementById('menuTitle').addEventListener('click', toggleDropdown);
+document.querySelector(".order-button").addEventListener('click', scrollToWork);
+document.querySelector(".tablet-order-button").addEventListener('click', scrollToWork);
 
 
 function toggleMenu() {
@@ -30,10 +32,24 @@ function toggleDropdown(event) {
     }
   }
 
-
-
-// Функція, яка прокручує до секції Work together
+// Функція, яка прокручує до секції Work together куди треба додати айді
 function scrollToWork() {
  const workSection = document.getElementById("workSection");
     workSection.scrollIntoView({ behavior: 'smooth' });
 }
+
+const navLinks = document.querySelectorAll('.nav-links a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault(); 
+
+        const sectionId = this.getAttribute('href'); 
+        const section = document.querySelector(sectionId); 
+
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' }); 
+        }
+    });
+});
+  
