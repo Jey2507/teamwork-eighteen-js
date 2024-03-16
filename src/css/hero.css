@@ -1,5 +1,5 @@
-.hero-section {
-    background-color:linear-gradient(90.11deg, #1C1D20 49.69%, #001958 67.71%, #0041E8 99.91%);
+.hero-section .section{
+    background-color: linear-gradient(90.11deg, #1C1D20 49.69%, #001958 67.71%, #0041E8 99.91%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,3 +64,16 @@
         position: relative;
 }
 
+@media screen and (min-width: 768px) {
+    .hero-social-networks{
+        margin-left: 263px;
+        padding-top: 937px;
+        width:473px;
+        height: 55px;
+    }
+        .hero-title {
+            font-size: 90px;
+            line-height: 90px;
+            padding-top: 300px;
+        }
+}
