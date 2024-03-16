@@ -51,6 +51,7 @@
 .icon-answer rect, .icon-answer path{
     transition: sroke .5s;
 }
+
 .title-item-list:hover,
 .title-item-list:active,
 .icon-answer:hover rect,
@@ -60,7 +61,9 @@
     color: #0041E8;
     stroke: #0041E8;
 }
-
+.title-item-list:focus{
+    color: #0041E8;
+}
 
 .text-item-list {
     font-family: inherit;
