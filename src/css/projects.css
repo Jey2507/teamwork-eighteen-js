@@ -108,13 +108,6 @@
 .swiper-slide {
 } */
 
-/* @media screen and (min-width: 480px) {
-  .container {
-    width: 320px;
-    margin: 0 auto;
-  }
-} */
-
 @media screen and (min-width: 768px) {
   .project-info-thumb {
     padding: 64px;
@@ -180,6 +173,7 @@
   }
 
   .project-picture-thumb {
+    min-width: 688px;
     box-sizing: border-box;
     padding: 120px 37px;
     border-radius: 0 24px 24px 0;
