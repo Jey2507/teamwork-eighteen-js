@@ -11,12 +11,11 @@
 .qwestion {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .faq-item {
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-    padding: 20px 0;
     background-color: #1c1d20;
 }
 
@@ -30,13 +29,12 @@
 }
 
 .title-item-list {
-    width: 485px;
+    width: 265px;
     font-family: inherit;
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: -0.02em;
     color: rgb(255, 255, 255);
-    margin-bottom: 16px;
     font-weight: 600;
     transition: color .6s ease;
     cursor: pointer;
@@ -75,7 +73,7 @@
     line-height: 1.5;
     letter-spacing: -0.02em;
     color: rgba(250, 250, 250, 0.6)  ;
-    padding: 0 ;
+    padding-top: 20px;
 }
 
 .btn-answer {
@@ -99,6 +97,7 @@
 .faq-item {
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
     background-color: #1c1d20;
+    padding: 20px 0;
 }
 
 
@@ -112,13 +111,12 @@
 }
 @media screen and (min-width: 768px) {
     .title-item-list {
-        margin-bottom: 26px;
+        width: 485px;
     }
-
     .text-item-list {
-        padding-bottom: 23.5px;
         width: 656px;
         height: 77px;
+        padding-top: 24px;
     }
 }
 
@@ -147,7 +145,7 @@
             
         }
     .text-item-list {
-        padding: 0;
+        padding-top: 26px;
     }
 
     .faq-list li:nth-child(-n+4) {
