@@ -1,0 +1,166 @@
+.section {
+  background-color: #1C1D20;
+}
+
+.accenttext {
+  color: #ED3B44;
+}
+
+.seactionheader {
+  text-transform: uppercase;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  margin-bottom: 18px;
+}
+
+.seactionheader div {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: inline;
+  width: 70px;
+  height: 70px;
+  margin-right: 8px;
+}
+
+.btnsubmit {
+  color: #FAFAFA;
+  background-color: #ED3B44;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 16px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 0;
+  margin-left: 64px;
+}
+
+.btnsubmit:hover {
+  background-color: #E0373F;
+}
+
+.inputsection {
+  display: inline;
+}
+
+.inputarea {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  border-left: 0;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 16px;
+  color: #FAFAFA;
+  background-color: transparent;
+  padding: 0 0 20px 0;
+  margin-right: 32px;
+  width: 390px;
+}
+
+.inputarea::placeholder {
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.inputarea:focus, inputarea:active {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.6);
+  border-left: 0;
+  outline: none;
+}
+
+#email:not(:placeholder-shown):invalid {
+  border-bottom: 1px solid #E74A3B;
+}
+
+#email:valid {
+  border-bottom: 1px solid #3CBC81;
+}
+
+#email:focus {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.6);
+}
+
+.contactarea a {
+  font-family: "Inter Tight", sans-serif;
+  color: #FAFAFA;
+  background-color: transparent;
+  border-radius: 60px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.contactarea a:hover {
+  border: 1px solid rgba(250, 250, 250, 1);
+}
+
+.contactarea {
+  margin-top: 18px;
+  gap: 8px;
+  display: flex;
+}
+
+
+@media screen and (min-width: 320px) {
+  .seactionheader {
+    font-size: 40px;
+    margin-bottom: 64px;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  .btnsubmit {
+    margin-left: 0;
+    margin-top: 16px;
+    height: 100px;
+    width: 100px;
+  }
+  .inputarea {
+    margin-bottom: 16px;
+  }
+  .contactarea {
+    margin-top: 48px;
+  }
+  .contactarea a {
+    font-size: 14px;
+    padding: 10px 12px 10px 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .inputarea {
+    width: 245px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1445px) {
+  .seactionheader {
+    font-size: 64px;
+    margin-bottom: 18px;
+  }
+  .logo {
+    height: 70px;
+    width: 70px;
+  }
+  .btnsubmit {
+    margin-left: 0;
+    margin-top: 16px;
+    height: 150px;
+    width: 150px;
+  }
+  .inputarea {
+    width: 390px;
+    margin-bottom: 0;
+  }
+  .contactarea {
+    margin-top: 18px;
+  }
+  .contactarea a {
+    font-size: 14px;
+    padding: 18px 32px 18px 32px;
+  }
+}
