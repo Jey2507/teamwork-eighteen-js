@@ -66,8 +66,9 @@
     left: 0; 
     width: 100vw; 
     height: 100vh; 
-    background-image: url("../img/header/Glass-effect.jpg");
-    background: linear-gradient(90deg, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 100%);
+    background-image: url("../img/hero/background_hero_tel_modal.png");
+    background-image: url("../img/hero/background_hero_tel_modal@2x.png") 2x;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;

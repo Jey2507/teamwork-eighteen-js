@@ -9,16 +9,8 @@ document.getElementById('menuTitle').addEventListener('click', toggleDropdown);
 document.querySelector(".order-button").addEventListener('click', scrollToWork);
 document.querySelector(".tablet-order-button").addEventListener('click', scrollToWork);
 
-/* function toggleMenu() {
-    navMenu.classList.toggle('active'); 
-} */
-
 function toggleMenu() {
-  if (!navMenu.classList.contains('active')) {
-      navMenu.classList.add('active');
-  } else {
-      navMenu.classList.remove('active');
-  }
+    navMenu.classList.toggle('active'); 
 }
 
 function closeMenu() {
@@ -46,5 +38,3 @@ document.querySelectorAll('nav a').forEach(anchor => {
         }
     });
 });
-
-
