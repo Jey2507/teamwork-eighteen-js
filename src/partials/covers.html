@@ -209,11 +209,11 @@
 <!-- REVIEWS-->
 
 <section class="section" id="reviews">
-  <div class="container">
+  <div class="container swiper">
     <h2 class="reviews-section-title">Reviews</h2>
-    <ul class="reviews-list list">
-
-<!--
+    <div class="swiper-container">
+      <ul class="reviews-list list swiper-wrapper">
+        <!--
 
       <li class="reviews-item">
         <div class="reviews-item-box">
@@ -301,19 +301,19 @@
         </div>
       </li>
         -->
-    </ul>
+      </ul>
+    </div>
 
-
-
-    <div class="button-container">
-      <button type="button" class="button-left">
-        <svg class="arrow-icon" width="26" height="10">
-          <use href="./src/symbol-defs.svg#icon-left"></use>
+    <div class="button-container swiper-pagination">
+      <button type="button" class="swipe-btn swiper-button-prev">
+        <svg class="btn-svg" transform="scale(-1, 1)">
+          <use href="../img/icons.svg#icon-arrow-narrow-right"></use>
         </svg>
       </button>
-      <button type="button" class="button-right">
-        <svg class="arrow-icon" width="26" height="10">
-          <use href="./src/symbol-defs.svg#icon-right"></use>
+
+      <button type="button" class="swipe-btn swiper-button-next">
+        <svg class="btn-svg" >
+          <use href="../img/icons.svg#icon-arrow-narrow-right"></use>
         </svg>
       </button>
     </div>
