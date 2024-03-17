@@ -102,15 +102,6 @@
   stroke: rgba(250, 250, 250, 0.2);
 }
 
-/* .swiper {
-}
-.swiper-pagination {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-} */
-
 @media screen and (min-width: 768px) {
   .project-info-thumb {
     padding: 64px;
@@ -159,7 +150,7 @@
 
   .project-info-thumb {
     box-sizing: border-box;
-
+    min-width: 688px;
     padding: 64px;
     border-radius: 24px 0 0 24px;
   }
