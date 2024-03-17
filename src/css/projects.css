@@ -95,6 +95,14 @@
   height: 52px;
 }
 
+.swipe-btn:disabled {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.swipe-btn:disabled .icon-arrow {
+  fill: rgba(250, 250, 250, 0.2);
+}
+
 .btn-svg {
   width: 24px;
   height: 24px;
