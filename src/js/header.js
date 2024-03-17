@@ -20,8 +20,13 @@ function closeMenu() {
 function toggleDropdown(event) {
     event.preventDefault();
     const dropdownContent = document.getElementById('dropdownContent');
-    dropdownContent.style.display = dropdownContent.style.display === "flex" ? "none" : "flex";
+    if (dropdownContent.style.display === "none") {
+        dropdownContent.style.display = "flex";
+    } else {
+        dropdownContent.style.display = "none";
+    }
 }
+
 
 function scrollToWork() {
     workSection.scrollIntoView({ behavior: 'smooth' });

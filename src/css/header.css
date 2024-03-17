@@ -5,12 +5,16 @@
     left: 16px;
     right: 16px;
     height: 80px;
-    background-color: rgba(255, 255, 255, 0.5); 
-    z-index: 1000; /* Поверх секції Hero */
+    background-color: transparent; 
+    z-index: 1000; 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+
+  #dropdownContent {
+    display: none;
+}
 
   .dropdown{
     display: none;
@@ -66,8 +70,11 @@
     left: 0; 
     width: 100vw; 
     height: 100vh; 
-    background-image: url("../img/hero/background_hero_tel_modal.png");
-    background-image: url("../img/hero/background_hero_tel_modal@2x.png") 2x;
+    background-image: 
+  linear-gradient(90deg, rgba(28, 29, 32, 0.8) 49.68%, rgba(0, 25, 88, 0.8) 67.73%, rgba(0, 65, 232, 0.8) 100%), 
+  url("../img/header/Glass-effect.jpg");
+
+ 
 
     display: flex;
     flex-direction: column;
@@ -75,7 +82,6 @@
 
     backdrop-filter: blur(4px);
 }
-
 
   
 .nav-links{
