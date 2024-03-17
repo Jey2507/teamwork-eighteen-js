@@ -1,8 +1,7 @@
-const toggleElement = document.getElementById('BurgerMenuId');
 const navMenu = document.getElementById('navMenu');
+const toggleElement = document.getElementById('BurgerMenuId');
 const toggleCloseMenu = document.getElementById('MenuCloseId');
-
-
+const workSection = document.getElementById("workSection");
 
 toggleElement.addEventListener('click', toggleMenu);
 toggleCloseMenu.addEventListener('click', closeMenu);
@@ -10,11 +9,17 @@ document.getElementById('menuTitle').addEventListener('click', toggleDropdown);
 document.querySelector(".order-button").addEventListener('click', scrollToWork);
 document.querySelector(".tablet-order-button").addEventListener('click', scrollToWork);
 
+/* function toggleMenu() {
+    navMenu.classList.toggle('active'); 
+} */
 
 function toggleMenu() {
-      navMenu.classList.toggle('active'); 
+  if (!navMenu.classList.contains('active')) {
+      navMenu.classList.add('active');
+  } else {
+      navMenu.classList.remove('active');
+  }
 }
-
 
 function closeMenu() {
     navMenu.classList.remove('active'); 
@@ -22,34 +27,24 @@ function closeMenu() {
   
 function toggleDropdown(event) {
     event.preventDefault();
-  
     const dropdownContent = document.getElementById('dropdownContent');
-  
-    if (dropdownContent.style.display === "flex") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "flex";
-    }
-  }
+    dropdownContent.style.display = dropdownContent.style.display === "flex" ? "none" : "flex";
+}
 
-// Функція, яка прокручує до секції Work together куди треба додати айді
 function scrollToWork() {
- const workSection = document.getElementById("workSection");
     workSection.scrollIntoView({ behavior: 'smooth' });
 }
 
-const navLinks = document.querySelectorAll('.nav-links a');
-
-navLinks.forEach(link => {
-    link.addEventListener('click', function(event) {
-        event.preventDefault(); 
-
-        const sectionId = this.getAttribute('href'); 
-        const section = document.querySelector(sectionId); 
-
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' }); 
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetSection = document.getElementById(targetId);
+        if(targetSection) {
+            navMenu.classList.remove('active');
+            targetSection.scrollIntoView({ behavior: 'smooth' });
         }
     });
 });
-  
+
+
