@@ -85,6 +85,7 @@
 }
 
 .swipe-btn {
+	background-color: transparent;
 	position: static;
 	width: 52px;
 	height: 52px;
@@ -98,8 +99,31 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.btn-svg {
+	stroke: #fafafa;
+	width: 24px;
+	height: 24px;
+}
+
+.swipe-btn:disabled {
+	border: 1px solid var(--border-color);
+}
+
+.swipe-btn:hover {
 	background-color: var(--cards);
 }
+
+.swipe-btn:disabled .btn-svg {
+	stroke: var(--border-color);
+}
+
 
 /** ============================================tablet style===================================**/
 
@@ -110,9 +134,6 @@
 		display: flex;
 		width: calc((100% - 16px) / 2);
 	}
-
-
-
 
 	.button-container {
 		gap: 20px;
