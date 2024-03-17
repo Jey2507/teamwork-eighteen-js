@@ -13,7 +13,7 @@
         line-height: 1.5;
         letter-spacing: -0.02em;
         text-transform: uppercase;
-        color: rgba(250, 250, 250, 0.4);
+        color: var(--section-text);
 
     }
     .list-benefits{
@@ -32,7 +32,7 @@
         flex-direction: column;
         border-radius: 20px;
         padding: 24px;
-        background: #242527;
+        background: var(--card);
 
     }
 
@@ -46,7 +46,7 @@
         align-self: stretch;
         flex-grow: 0;
         text-align: left;
-        color: #fafafa;
+        color: var(--main-text);
         margin-bottom: 8px;
     }
 
@@ -60,14 +60,14 @@
         align-self: stretch;
         flex-grow: 0;
         text-align: left;
-        color: rgba(250, 250, 250, 0.6);
+        color: var(--section-text);
     }
 
     .cards-benefits{
         border-radius: 10px;
         width: 48px;
         height: 48px;
-        background-color:#0041E8;
+        background-color: var(--accent-color);
         margin-bottom: 64px;
     }
     .icon-benefits {
@@ -84,12 +84,13 @@
         height: 19px;
         flex-grow: 0;
         text-align: left;
-        color: #fafafa;
+        color: var(--main-text);
         padding: 18px 36px;
     }
 
     .text-btn-benefits:hover{
-        color: #0041F5;
+        color: var(--accent-color-hover);
+        
     }
 
     .btn-benefits {
@@ -97,7 +98,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: row;
-        border: 1px solid rgba(250, 250, 250, 0.2);
+        border: 1px solid var(--section-text);
         border-radius: 60px;
         width: 187px;
         height: 55px;
@@ -106,7 +107,7 @@
     }
 
     .btn-benefits:hover{
-    border-color: #0041F5;
+    border-color: var(--accent-color-hover);
     }
 
 
