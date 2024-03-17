@@ -44,6 +44,3 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-/* document.getElementById('nav-button').addEventListener('click', function() {
-  workSection.scrollIntoView({ behavior: 'smooth' });
-}); */
