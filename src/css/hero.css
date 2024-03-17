@@ -38,6 +38,10 @@
      gap: 4px;
 }
 
+.hero-list-social{
+    display: flex;
+}
+
 .social-name {
     font-size: 14px;
     font-weight: 500;
