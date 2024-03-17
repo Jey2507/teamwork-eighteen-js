@@ -86,7 +86,16 @@
 
 p.ac-side-text {
   margin-bottom: 22px;
+} 
+.is-active .accordion-svg {
+  transform: rotate(180deg);
 }
+.ac .ac-panel {
+    overflow: hidden;
+    transition-property: height, visibility;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+}
+
 
 /*  SKILLS SWIPER */
 
