@@ -3,7 +3,7 @@ const accordion = new Accordion('.about-me-list', {
   showMultiple: true,
 });
 
-const accordionItems = document.querySelectorAll('.faq-item');
+const accordionItems = document.querySelectorAll('.ac-list-item');
 
 accordionItems.forEach(item => {
   const header = item.querySelector('.ac-header');
