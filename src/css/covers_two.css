@@ -1,5 +1,16 @@
 .static-section {
+    position: absolute;
     width: 375px;
     height: 508px;
     background-image: url("../img/covers/back_tel.jpg");
+}
+
+.image-class {
+    width: 282.29px;
+    height: 162.94px;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
 }
