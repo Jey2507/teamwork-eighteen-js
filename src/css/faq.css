@@ -14,10 +14,6 @@
     align-items: center;
 }
 
-.faq-item {
-    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-    background-color: #1c1d20;
-}
 
 
 .faq-item:first-child {
