@@ -111,6 +111,10 @@
     margin-bottom: 64px;
    
   }
+
+  .order-button:hover{
+    background-color:#E0373F;
+  }
   
  
     .burger-menu {
