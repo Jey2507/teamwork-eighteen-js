@@ -30,3 +30,19 @@ form.addEventListener('submit', function (e) {
     });
 });
 window.show(document.querySelector('#modal', handclick));
+const modal = document.querySelector('#modal');
+const closeButton = document.querySelector('.close-button');
+const backdrop = document.querySelector('#backdrop');
+
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+closeButton.addEventListener('click', closeModal);
+backdrop.addEventListener('click', closeModal);
+
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    closeModal();
+  }
+});
