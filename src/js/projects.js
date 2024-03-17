@@ -2,10 +2,7 @@ import Swiper from 'swiper';
 import 'swiper/css';
 
 const swiper = new Swiper('.swiper', {
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'progressbar',
-  },
+  preventInteractionOnTransition: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
