@@ -29,3 +29,4 @@ form.addEventListener('submit', function (e) {
       alert('Помилка при відправці заявки. Будь ласка, спробуйте ще раз.');
     });
 });
+window.show(document.querySelector('#modal', handclick));

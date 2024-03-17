@@ -1,14 +1,14 @@
 .section {
-  background-color: #1C1D20;
+  background-color: #1c1d20;
 }
 
 .accenttext {
-  color: #ED3B44;
+  color: #ed3b44;
 }
 
 .seactionheader {
   text-transform: uppercase;
-  font-family: "Inter Tight", sans-serif;
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 64px;
   margin-bottom: 18px;
@@ -27,9 +27,9 @@
 }
 
 .btnsubmit {
-  color: #FAFAFA;
-  background-color: #ED3B44;
-  font-family: "Inter Tight", sans-serif;
+  color: #fafafa;
+  background-color: #ed3b44;
+  font-family: 'Inter Tight', sans-serif;
   font-size: 16px;
   height: 150px;
   width: 150px;
@@ -39,7 +39,7 @@
 }
 
 .btnsubmit:hover {
-  background-color: #E0373F;
+  background-color: #e0373f;
 }
 
 .inputsection {
@@ -51,9 +51,9 @@
   border-right: 0;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   border-left: 0;
-  font-family: "Inter Tight", sans-serif;
+  font-family: 'Inter Tight', sans-serif;
   font-size: 16px;
-  color: #FAFAFA;
+  color: #fafafa;
   background-color: transparent;
   padding: 0 0 20px 0;
   margin-right: 32px;
@@ -64,7 +64,8 @@
   color: rgba(250, 250, 250, 0.6);
 }
 
-.inputarea:focus, inputarea:active {
+.inputarea:focus,
+inputarea:active {
   border-top: 0;
   border-right: 0;
   border-bottom: 1px solid rgba(250, 250, 250, 0.6);
@@ -73,11 +74,11 @@
 }
 
 #email:not(:placeholder-shown):invalid {
-  border-bottom: 1px solid #E74A3B;
+  border-bottom: 1px solid #e74a3b;
 }
 
 #email:valid {
-  border-bottom: 1px solid #3CBC81;
+  border-bottom: 1px solid #3cbc81;
 }
 
 #email:focus {
@@ -85,8 +86,8 @@
 }
 
 .contactarea a {
-  font-family: "Inter Tight", sans-serif;
-  color: #FAFAFA;
+  font-family: 'Inter Tight', sans-serif;
+  color: #fafafa;
   background-color: transparent;
   border-radius: 60px;
   border: 1px solid rgba(250, 250, 250, 0.2);
@@ -101,7 +102,6 @@
   gap: 8px;
   display: flex;
 }
-
 
 @media screen and (min-width: 320px) {
   .seactionheader {
@@ -163,4 +163,21 @@
     font-size: 14px;
     padding: 18px 32px 18px 32px;
   }
+}
+#modal {
+font:'Inter Tight';
+padding: 50%;
+border-radius: 3px 3px 0 0;
+position: absolute;
+background-color: #1C1D20;
+background-size: cover;
+}
+.title {
+  color:#FAFAFA
+}
+.lowercase{
+  color:rgba(250, 250, 250, 0.6); 
+}
+.modal-container {
+
 }
