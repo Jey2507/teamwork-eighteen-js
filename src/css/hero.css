@@ -7,6 +7,13 @@
 .hero-text{
     padding-top: 281px;
 }
+
+.break{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
 .hero-title {
     color: #FAFAFA;;
     font-weight: 500;
@@ -74,8 +81,7 @@
         
     }
     .hero-social-networks{
-        margin-left: 243px;
-        padding-top: 483px;
+        justify-content: flex-end;
     }
         .hero-title {
             font-size: 90px;
@@ -95,9 +101,5 @@
    margin-left: 178px;
     width: 1084px;
 }
-.hero-social-networks {
-    margin-left: 915px;
-    padding-top: 473px;
-    }
 }
 
