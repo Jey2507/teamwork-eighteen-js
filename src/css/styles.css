@@ -5,6 +5,7 @@
 @import url('./benefits.css');
 @import url('./projects.css');
 @import url('./faq.css');
+@import url('./covers_two.css');
 @import url('./covers.css');
 @import url('./work_together.css');
 
@@ -13,13 +14,13 @@
   --accent-color-hover:  #0041F5;
   --main-text: #fafafa;
   --section-text: rgba(250, 250, 250, 0.4);
+  --section-faq-text: rgba(250, 250, 250, 0.4);
   --cards: #242527;
 }
 
-
 body {
-  font-family: "Inter Tight", sans-serif;
-  background-color:  #1c1d20;
+  font-family: 'Inter Tight', sans-serif;
+  background-color: #1c1d20;
   color: #fafafa;
 }
 
