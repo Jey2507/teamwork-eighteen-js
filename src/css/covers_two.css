@@ -1,16 +1,27 @@
 .static-section {
-    position: absolute;
     width: 375px;
     height: 508px;
     background-image: url("../img/covers/back_tel.jpg");
+    overflow: hidden;
+    margin: 0 auto;
 }
 
-.image-class {
-    width: 282.29px;
-    height: 162.94px;
+.div-rotate {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    transform: rotate(16deg) translate(-70px, -50px)
 }
 
 .image-container {
-    position: relative;
     display: flex;
+    flex-wrap: nowrap;
+    column-gap: 24px;
 }
+
+.image-other {
+    flex: 1;
+    max-width: 282.29px;
+    height: 162.94px;
+}
+
