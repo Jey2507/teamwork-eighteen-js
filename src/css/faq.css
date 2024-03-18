@@ -50,7 +50,8 @@
 .title-item-list:hover,
 .title-item-list:active,
 .icon-answer:hover,
-.icon-answer:active {
+.icon-answer:active,
+.btn-answer:hover .icon-answer {
     color: var(--accent-color-hover);
     stroke: var(--accent-color-hover);
 }
