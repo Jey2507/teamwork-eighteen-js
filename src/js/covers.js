@@ -1,8 +1,10 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 
 let buttonLeft, buttonRight;
+
+buttonLeft = document.querySelector('.swiper-button-prev-review');
+buttonRight = document.querySelector('.swiper-button-next-review');
 
 document.addEventListener('DOMContentLoaded', async () => {
 	try {
@@ -17,7 +19,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 		console.error('Error fetching data:', error);
 	}
 
-	const swiper = new Swiper('.swiper-container', {
+	const swiperReview = new Swiper('.swiper-container', {
 		direction: 'horizontal',
 		slidesPerView: 'auto',
 		spaceBetween: 12,
@@ -26,37 +28,34 @@ document.addEventListener('DOMContentLoaded', async () => {
 		},
 
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			nextEl: '.swiper-button-next-review',
+			prevEl: '.swiper-button-prev-review',
 		},
 
 	});
 
 
-	swiper.on('slideChange', () => {
-		buttonLeft = document.querySelector('.swiper-button-prev');
-		buttonRight = document.querySelector('.swiper-button-next');
-		if (swiper.isBeginning) {
+	swiperReview.on('slideChange', () => {
+		
+		if (swiperReview.isBeginning) {
 			buttonLeft.disabled = true;
 			buttonRight.disabled = false;
-		} else if (swiper.isEnd) {
+		} else if (swiperReview.isEnd) {
 			buttonLeft.disabled = false;
 			buttonRight.disabled = true;
 		} else {
 			buttonLeft.disabled = false;
 			buttonRight.disabled = false;
 		}
-		swiper.update();
+		swiperReview.update();
 	});
 
-	buttonLeft = document.querySelector('.swiper-button-prev');
 	buttonLeft.addEventListener('click', function () {
-		swiper.slidePrev();
+		swiperReview.slidePrev();
 	});
 
-	buttonRight = document.querySelector('.swiper-button-next');
 	buttonRight.addEventListener('click', function () {
-		swiper.slideNext();
+		swiperReview.slideNext();
 	});
 
 

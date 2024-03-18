@@ -63,7 +63,6 @@
 	line-height: 1.5;
 	text-align: left;
 	margin-bottom: 8px;
-	text-transform: uppercase;
 
 }
 
@@ -74,6 +73,18 @@
 	line-height: 1.5;
 	text-align: left;
 
+}
+
+.swiper-review {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+	/* Fix of Webkit flickering */
+	z-index: 1;
+	display: block;
 }
 
 .button-container {
@@ -154,12 +165,7 @@
 @media screen and (min-width: 1280px) {
 
 	.reviews-item {
-
 		width: calc((100% - 32px) / 3);
-	}
-
-	.reviews-list {
-		gap: 16px;
 	}
 
 }
@@ -168,7 +174,11 @@
 
 	.reviews-item {
 		max-width: 332px;
-		width: calc((100% - 48px) / 4);
+		width: calc(((100% - 48px) / 4));
+	}
+
+	.swiper-review {
+		width: 1364px;
 	}
 
 }
