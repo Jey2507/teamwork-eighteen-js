@@ -50,10 +50,11 @@
 	border-radius: 20px;
 }
 
+/*
 .reviews-item:nth-child(1) {
 	display: block;
 }
-
+*/
 .reviews-item-img {
 	position: static;
 	width: 48px;
