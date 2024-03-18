@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 	});
 
-
+	buttonLeft.disabled = true;
 	swiperReview.on('slideChange', () => {
-		
+
 		if (swiperReview.isBeginning) {
 			buttonLeft.disabled = true;
 			buttonRight.disabled = false;
