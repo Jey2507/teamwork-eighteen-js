@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .section {
   background-color: #1c1d20;
 }
@@ -181,16 +185,26 @@ inputarea:active {
 .title {
   color: #fafafa;
   margin-bottom: 16px;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  letter-spacing: -0.42px;
 }
 .lowercase {
   color: rgba(250, 250, 250, 0.6);
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
 }
 .modal-container {
   background-color: #1c1d20;
   border-radius: 20px;
   border: 1px solid rgba(250, 250, 250, 0.102);
   height: 246px;
-  width: 496px;
+  width: 492px;
+  padding: 64px;
   position: relative;
   text-align: center;
   margin: auto;
@@ -201,5 +215,4 @@ inputarea:active {
   right: 20px;
   height: 24px;
   width: 24px;
-  border: rgba(250, 250, 250, 0.101) solid 2px;
 }
