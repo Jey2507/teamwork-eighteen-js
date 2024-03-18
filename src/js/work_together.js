@@ -19,8 +19,8 @@ form.addEventListener('submit', function (e) {
     .then(response => response.json())
     .then(data => {
       if (data.success) {
-        document.getElementById('modal').style.display = 'block';
-        form.reset()
+        document.getElementById('modal').style.display = 'flex';
+        form.reset();
       } else {
         alert('Помилка при відправці заявки. Будь ласка, спробуйте ще раз.');
       }
@@ -29,11 +29,10 @@ form.addEventListener('submit', function (e) {
       alert('Помилка при відправці заявки. Будь ласка, спробуйте ще раз.');
     });
 });
-window.show(document.querySelector('#modal', handclick));
 const modal = document.querySelector('#modal');
-const closeButton = document.querySelector('.close-button');
+const closeButton = document.querySelector('#backdrop');
 const backdrop = document.querySelector('#backdrop');
-
+const window = document.querySelector('backdrop');
 function closeModal() {
   modal.style.display = 'none';
 }
@@ -41,7 +40,7 @@ function closeModal() {
 closeButton.addEventListener('click', closeModal);
 backdrop.addEventListener('click', closeModal);
 
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function (event) {
   if (event.key === 'Escape') {
     closeModal();
   }
