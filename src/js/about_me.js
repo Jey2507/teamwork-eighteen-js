@@ -1,4 +1,7 @@
 import Accordion from 'accordion-js';
+import Swiper from 'swiper';
+import 'swiper/css';
+
 const accordion = new Accordion('.about-me-list', {
   showMultiple: true,
 });
@@ -18,3 +21,35 @@ accordionItems.forEach(item => {
     }
   });
 });
+
+const prevButtonSk = document.querySelector('.btn-prev');
+const nextButtonSk = document.querySelector('.btn-next');
+prevButtonSk.style.display = 'none';
+
+const swiperSkills = new Swiper('.swiper-project', {
+  preventInteractionOnTransition: true,
+  // slidesPerView: 2,
+  on: {
+    slideChange: function () {
+      nextButtonSk.style.display = swiperSkills.isEnd ? 'none' : 'block';
+      prevButtonSk.style.display = swiperSkills.isBeginning ? 'none' : 'block';
+    },
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+prevButtonSk.addEventListener('click', function () {
+  swiperSkills.slidePrev();
+});
+
+nextButtonSk.addEventListener('click', function () {
+  swiperSkills.slideNext();
+});
+
+// swiperSkills.on('slideChange', function () {
+//   nextButtonSk.disabled = swiperSkills.isEnd ? true : false;
+//   prevButtonSk.disabled = swiperSkills.isBeginning ? true : false;
+// });
