@@ -20,6 +20,13 @@
 
 }
 
+.reviews-item {
+	box-shadow: 0 0 20px 2px var(--accent-color-hover);
+	scale: 1.04;
+}
+
+
+
 
 
 .reviews-section-title {
@@ -43,10 +50,11 @@
 	border-radius: 20px;
 }
 
+/*
 .reviews-item:nth-child(1) {
 	display: block;
 }
-
+*/
 .reviews-item-img {
 	position: static;
 	width: 48px;
@@ -82,7 +90,6 @@
 	overflow: hidden;
 	list-style: none;
 	padding: 0;
-	/* Fix of Webkit flickering */
 	z-index: 1;
 	display: block;
 }
@@ -178,7 +185,7 @@
 	}
 
 	.swiper-review {
-		width: 1364px;
+		width: 1440px;
 	}
 
 }
