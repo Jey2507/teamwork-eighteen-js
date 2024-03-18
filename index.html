@@ -16,11 +16,71 @@
     <script type="module" crossorigin src="/teamwork-eighteen-js/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/teamwork-eighteen-js/assets/vendor-842a7ad1.js">
     <link rel="stylesheet" href="/teamwork-eighteen-js/assets/vendor-7c8ef494.css">
-    <link rel="stylesheet" href="/teamwork-eighteen-js/assets/index-0d9f820e.css">
+    <link rel="stylesheet" href="/teamwork-eighteen-js/assets/index-a4ab1992.css">
   </head>
   <body>
     <header>
+      <header class="header container">
+    <div class="tablet-desctop-elements">
+      <div class="logo">
+        <img
+            class="logo-img"
+            srcset="/teamwork-eighteen-js/assets/logo@2x-7931c7f4.png 2x"
+            src="/teamwork-eighteen-js/assets/logo-42eff5b8.png"
+            alt="logo image"
+            width="80"
+            height="80"
+          />
+          <svg class="icon icon-jefferson"><use href="/teamwork-eighteen-js/assets/symbol-defs-dd7a5c63.svg#icon-jefferson"></use></svg>     
+      </div>
+  
+      <div class="dropdown">
+        <a href="#" class="menu-title" id="menuTitle">Menu</a>
+        <div class="dropdown-content" id="dropdownContent">
+          <a href="#about">About me</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#projects">Projects</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </div>
+  
+      <button type="button" class="tablet-order-button" onclick="scrollToWork()">Order the project</button>
+
+    </div>
+ 
+
+
+    <div class="burger-menu" id="BurgerMenuId" onclick="toggleMenu()">
+      <svg class="icon icon-menu-05" width="28" height="28"><use href="/teamwork-eighteen-js/assets/symbol-defs-dd7a5c63.svg#icon-menu-05"></use></svg> 
       
+    </div>
+
+
+        
+    <nav class="nav-menu" id="navMenu">
+
+      <div class="close-menu" id="MenuCloseId">
+        <svg class="icon icon-menu-x" width="28" height="28"><use href="/teamwork-eighteen-js/assets/symbol-defs-dd7a5c63.svg#icon-x"></use></svg>
+        
+      </div>
+
+  
+      <div class="nav-links">
+        <a href="#about">About me</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#projects">Projects</a>
+        <a href="#faq">FAQ</a>
+      </div>
+     
+      <button type="button" class="order-button" id="nav-button">Order the project</button>
+    
+    </nav>
+  </header>
+  
+
+
+
+
     </header>
     <main>
       <!-- SECTION HERO -->
@@ -224,7 +284,7 @@
                     <li class="list-item-benefits">
                         <div class="cards-benefits">
                             <svg class="icon-benefits" width="24" height="24">
-                                <use href="/teamwork-eighteen-js/assets/icons-3cff07c2.svg#icon-user">
+                                <use href="/teamwork-eighteen-js/assets/icons-d64745cc.svg#icon-user">
                     
                                 </use>
                             </svg>
@@ -237,7 +297,7 @@
                     <li class="list-item-benefits">
                         <div class="cards-benefits">
                             <svg class="icon-benefits" width="24" height="24">
-                                <use href="/teamwork-eighteen-js/assets/icons-3cff07c2.svg#icon-message-chat-circle">
+                                <use href="/teamwork-eighteen-js/assets/icons-d64745cc.svg#icon-message-chat-circle">
                     
                                 </use>
                             </svg>
@@ -250,7 +310,7 @@
                     <li class="list-item-benefits">
                         <div class="cards-benefits">
                             <svg class="icon-benefits" width="24" height="24">
-                                <use href="/teamwork-eighteen-js/assets/icons-3cff07c2.svg#icon-brush">
+                                <use href="/teamwork-eighteen-js/assets/icons-d64745cc.svg#icon-brush">
                     
                                 </use>
                             </svg>
@@ -263,7 +323,7 @@
                     <li class="list-item-benefits">
                         <div class="cards-benefits">
                             <svg class="icon-benefits" width="24" height="24">
-                                <use href="/teamwork-eighteen-js/assets/icons-3cff07c2.svg#icon-hourglass">
+                                <use href="/teamwork-eighteen-js/assets/icons-d64745cc.svg#icon-hourglass">
                     
                                 </use>
                             </svg>
@@ -384,14 +444,14 @@
     <div class="buttons-thumb">
       <button class="swipe-btn swiper-button-prev" type="button">
         <svg class="btn-svg" transform="scale(-1, 1)">
-          <use href="/teamwork-eighteen-js/assets/icons-3cff07c2.svg#icon-arrow-narrow-right" />
+          <use href="/teamwork-eighteen-js/assets/icons-d64745cc.svg#icon-arrow-narrow-right" />
         </svg>
       </button>
       <button class="swipe-btn swiper-button-next" type="button">
         <svg class="btn-svg">
           <use
             class="icon-arrow"
-            href="/teamwork-eighteen-js/assets/icons-3cff07c2.svg#icon-arrow-narrow-right"
+            href="/teamwork-eighteen-js/assets/icons-d64745cc.svg#icon-arrow-narrow-right"
           />
         </svg>
       </button>
@@ -410,7 +470,7 @@
           </h3>
           <button type="button" class="btn-answer ac-trigger">
             <svg class="icon-answer">
-              <use href="/teamwork-eighteen-js/assets/icons-3cff07c2.svg#icon-arrow-down"></use>
+              <use href="/teamwork-eighteen-js/assets/icons-d64745cc.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </div>
@@ -429,7 +489,7 @@
           </h3>
           <button type="button" class="btn-answer ac-trigger">
             <svg class="icon-answer" width="20">
-              <use class="use" href="/teamwork-eighteen-js/assets/icons-3cff07c2.svg#icon-arrow-down"></use>
+              <use class="use" href="/teamwork-eighteen-js/assets/icons-d64745cc.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </div>
@@ -450,7 +510,7 @@
           </h3>
           <button type="button" class="btn-answer ac-trigger">
             <svg class="icon-answer" width="20">
-              <use class="use" href="/teamwork-eighteen-js/assets/icons-3cff07c2.svg#icon-arrow-down"></use>
+              <use class="use" href="/teamwork-eighteen-js/assets/icons-d64745cc.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </div>
@@ -467,7 +527,7 @@
           <h3 class="title-item-list ac-header">How can I contact you?</h3>
           <button type="button" class="btn-answer ac-trigger">
             <svg class="icon-answer" width="20">
-              <use class="use" href="/teamwork-eighteen-js/assets/icons-3cff07c2.svg#icon-arrow-down"></use>
+              <use class="use" href="/teamwork-eighteen-js/assets/icons-d64745cc.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </div>
@@ -486,7 +546,7 @@
           </h3>
           <button type="button" class="btn-answer ac-trigger">
             <svg class="icon-answer" width="20">
-              <use class="use" href="/teamwork-eighteen-js/assets/icons-3cff07c2.svg#icon-arrow-down" />
+              <use class="use" href="/teamwork-eighteen-js/assets/icons-d64745cc.svg#icon-arrow-down" />
             </svg>
           </button>
         </div>
@@ -508,7 +568,7 @@
           </h3>
           <button type="button" class="btn-answer ac-trigger">
             <svg class="icon-answer" width="20">
-              <use class="use" href="/teamwork-eighteen-js/assets/icons-3cff07c2.svg#icon-arrow-down" />
+              <use class="use" href="/teamwork-eighteen-js/assets/icons-d64745cc.svg#icon-arrow-down" />
             </svg>
           </button>
         </div>
@@ -666,13 +726,13 @@
     <div class="button-container swiper-pagination">
       <button type="button" class="swipe-btn swiper-button-prev-review">
         <svg class="btn-svg" transform="scale(-1, 1)">
-          <use href="/teamwork-eighteen-js/assets/icons-3cff07c2.svg#icon-arrow-narrow-right" />
+          <use href="/teamwork-eighteen-js/assets/icons-d64745cc.svg#icon-arrow-narrow-right" />
         </svg>
       </button>
 
       <button type="button" class="swipe-btn swiper-button-next-review">
         <svg class="btn-svg">
-          <use href="/teamwork-eighteen-js/assets/icons-3cff07c2.svg#icon-arrow-narrow-right" />
+          <use href="/teamwork-eighteen-js/assets/icons-d64745cc.svg#icon-arrow-narrow-right" />
         </svg>
       </button>
     </div>
@@ -730,7 +790,7 @@
       ><svg class="backdrop">
         <use
           class="icon-cross"
-          href="/teamwork-eighteen-js/assets/icons-3cff07c2.svg#icon-cross"
+          href="/teamwork-eighteen-js/assets/icons-d64745cc.svg#icon-cross"
         />
 </svg>
     </a>
