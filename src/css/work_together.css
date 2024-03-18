@@ -69,12 +69,18 @@
 }
 
 .inputarea:focus,
-inputarea:active {
+.inputarea:active {
   border-top: 0;
   border-right: 0;
   border-bottom: 1px solid rgba(250, 250, 250, 0.6);
   border-left: 0;
   outline: none;
+}
+
+.inputarea:-webkit-autofill,
+.inputarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #1c1d20 inset !important;
+  -webkit-text-fill-color: white !important;
 }
 
 #email:not(:placeholder-shown):invalid {
@@ -215,4 +221,5 @@ inputarea:active {
   right: 20px;
   height: 24px;
   width: 24px;
+  cursor: pointer;
 }

@@ -13,28 +13,33 @@ form.addEventListener('submit', function (e) {
     },
     body: JSON.stringify({
       email: email,
-      comments: comments,
+      comment: comments,
     }),
   })
     .then(response => response.json())
     .then(data => {
-      if (data.success) {
-        document.getElementById('modal').style.display = 'flex';
-        form.reset();
-      } else {
-        alert('Помилка при відправці заявки. Будь ласка, спробуйте ще раз.');
-      }
+      showModal(data.title, data.message)
+      form.reset();
     })
     .catch(error => {
+      console.log('error = ' + error)
       alert('Помилка при відправці заявки. Будь ласка, спробуйте ще раз.');
     });
 });
 const modal = document.querySelector('#modal');
 const closeButton = document.querySelector('#backdrop');
 const backdrop = document.querySelector('#backdrop');
-const window = document.querySelector('backdrop');
+const modalTitle = document.querySelector('#modaltitle');
+const modalMessage = document.querySelector('#lowercase');
+
 function closeModal() {
   modal.style.display = 'none';
+}
+
+function showModal(title, message) {
+  modal.style.display = 'flex';
+  modalTitle.textContent = title;
+  modalMessage.textContent = message
 }
 
 closeButton.addEventListener('click', closeModal);
