@@ -9,7 +9,6 @@
 }
 
 .projects-list {
-  width: 812px;
   margin-bottom: 32px;
 }
 
@@ -138,6 +137,10 @@
     padding: 64px;
   }
 
+  .projects-list {
+    margin-bottom: 64px;
+  }
+
   .technologies {
     margin-bottom: 164px;
   }
@@ -175,7 +178,6 @@
 
 @media screen and (min-width: 1440px) {
   .projects-list .projects-list-item {
-    margin-bottom: 64px;
     display: flex;
   }
 
