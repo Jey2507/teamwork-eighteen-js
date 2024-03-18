@@ -1,7 +1,7 @@
 .static-section {
     width: 375px;
     height: 508px;
-    background-image: url("./img/covers/back_tel.jpg");
+    background-image: url("../img/covers/back_tel.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     overflow: hidden;
@@ -60,7 +60,7 @@
     .static-section {
         width: 1440px;
         height: 960px;
-        background-image: url("./img/covers/elements_vectors.png");
+        background-image: url("../img/covers/elements_vectors.png");
         background-size: 100%;
     }
     
