@@ -1,0 +1,217 @@
+/* Header Styles */
+.header {
+    position: absolute;
+    top: 32px;
+    left: 16px;
+    right: 16px;
+    height: 80px;
+    background-color: transparent; 
+    z-index: 1000; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #dropdownContent {
+    display: none;
+}
+
+  .dropdown{
+    display: none;
+  }
+
+  .tablet-order-button{
+    display: none;
+  }
+  
+  .logo {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+      
+  }
+  
+  .logo-img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .icon-jefferson {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: white;
+    fill: white;
+    width: 4.42em;
+  }
+  
+  
+  .icon-menu-x {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: white;
+    fill: white;
+    position: absolute;
+    top: 33px;
+    right: 18px;
+}
+
+.nav-menu{
+    display: none; 
+}
+
+.nav-menu.active {
+    position: fixed; 
+    z-index: 10000;
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    background-image: 
+  linear-gradient(90deg, rgba(28, 29, 32, 0.8) 49.68%, rgba(0, 25, 88, 0.8) 67.73%, rgba(0, 65, 232, 0.8) 100%), 
+  url("../img/header/Glass-effect.jpg");
+
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    backdrop-filter: blur(4px);
+}
+
+  
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    margin-top: 50%;
+}
+   
+  .nav-links a {
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+  }
+  
+  .order-button{
+    display: block;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    border: none;
+    border-radius: 60px;
+    padding: 14px 31px;
+    width: 164px;
+    height: 45px;
+    color: #FAFAFA;
+    background-color: #ED3B44;
+    text-align: center; 
+    margin-bottom: 64px;
+   
+  }
+
+  .order-button:hover{
+    background-color:#E0373F;
+  }
+  
+ 
+    .burger-menu {
+      display: block;
+    }
+        
+      
+  
+    .close-menu {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  
+
+/* ============== HEADER TABLET STYLES ============== */
+
+@media screen and (min-width: 768px) {
+
+    .tablet-desctop-elements {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .nav-menu {      
+        display: none;
+    }
+
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        text-decoration: underline;
+        color: white;
+        align-items: center;
+      
+    }
+
+    .dropdown-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+        margin-top: 32px;
+       }
+
+    
+    .dropdown-content a { 
+        text-decoration: none;
+       display: block;
+       padding-bottom: 16px;
+      
+        
+    }
+  
+    .tablet-order-button {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: -0.02em;
+        border: none;
+        border-radius: 60px;
+        padding: 14px 31px;
+        width: 164px;
+        height: 45px;
+        color: #FAFAFA;
+        background-color: #ED3B44;
+        text-align: center; 
+    }
+}
+
+
+
+
+
+
+
+
+.projects{
+  margin-top: 1000px;
+  background-color:#69292d;
+}
+
