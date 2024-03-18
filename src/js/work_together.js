@@ -18,11 +18,11 @@ form.addEventListener('submit', function (e) {
   })
     .then(response => response.json())
     .then(data => {
-      showModal(data.title, data.message)
+      showModal(data.title, data.message);
       form.reset();
     })
     .catch(error => {
-      console.log('error = ' + error)
+      console.log('error = ' + error);
       alert('Помилка при відправці заявки. Будь ласка, спробуйте ще раз.');
     });
 });
@@ -34,12 +34,14 @@ const modalMessage = document.querySelector('#lowercase');
 
 function closeModal() {
   modal.style.display = 'none';
+  document.body.style.overflow = '';
 }
 
 function showModal(title, message) {
   modal.style.display = 'flex';
   modalTitle.textContent = title;
-  modalMessage.textContent = message
+  modalMessage.textContent = message;
+  document.body.style.overflow = 'hidden';
 }
 
 closeButton.addEventListener('click', closeModal);
