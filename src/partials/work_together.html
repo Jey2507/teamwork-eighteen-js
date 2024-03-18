@@ -26,6 +26,7 @@
           name="comments"
           id="comments"
           required
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
           placeholder="comments"
         />
       </div>
@@ -36,39 +37,23 @@
       <a href="tel:+3801111111111">+380 11 1111 11 11</a>
     </div>
   </div>
-  <div id="modal" style="display: none">
-    <div class="modal-container">
-      <h3 id="modaltitle" class="title">
-        Thank you for your interest in cooperation!
-      </h3>
-      <a id="backdrop" class="backdrop"
-        ><svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M18 6L6 18"
-            stroke="#FAFAFA"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M6 6L18 18"
-            stroke="#FAFAFA"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          /></svg
-      ></a>
-      <p id="lowercase" class="lowercase">
-        The manager will contact you shortly to discuss further details and
-        opportunities for cooperation. Please stay in touch.
-      </p>
-    </div>
-  </div>
 </section>
-<script src="./js/work_together.js"></script>
+<div id="modal" style="display: none">
+  <div class="modal-container">
+    <h3 id="modaltitle" class="title">
+      Thank you for your interest in cooperation!
+    </h3>
+    <a id="backdrop" class="backdrop"
+      ><svg class="backdrop">
+        <use
+          class="icon-cross"
+          href="./img/icons.svg#icon-cross"
+        />
+</svg>
+    </a>
+    <p id="lowercase" class="lowercase">
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
+  </div>
+</div>

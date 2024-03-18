@@ -39,10 +39,12 @@ section {
   border-radius: 50%;
   border: 0;
   margin-left: 64px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btnsubmit:hover {
   background-color: var(--accent-color-hover);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .inputsection {
@@ -64,7 +66,7 @@ section {
 }
 
 .inputarea::placeholder {
-  color: rgba(250, 250, 250, 0.6);
+  color: var(--section-text);
 }
 
 .inputarea:focus,
@@ -93,6 +95,17 @@ section {
 #email:focus {
   border-bottom: 1px solid rgba(250, 250, 250, 0.6);
 }
+#comments:not(:placeholder-shown):invalid {
+  border-bottom: 1px solid #e74a3b;
+}
+
+#comments:valid {
+  border-bottom: 1px solid #3cbc81;
+}
+
+#comments:focus {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.6);
+}
 
 .contactarea a {
   font-family: 'Inter Tight', sans-serif;
@@ -100,16 +113,19 @@ section {
   background-color: transparent;
   border-radius: 60px;
   border: 1px solid rgba(250, 250, 250, 0.2);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contactarea a:hover {
   border: 1px solid rgba(250, 250, 250, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contactarea {
   margin-top: 18px;
   gap: 8px;
   display: flex;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 320px) {
@@ -186,6 +202,7 @@ section {
   bottom: 0;
   display: flex;
   text-align: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .title {
   color: var(--main-text);
