@@ -1,76 +1,74 @@
-<html>
-  <section class="section">
-    <div class="container">
-      <div class="seactionheader">
-        <div class="seactionheaderline">
-          <img class="logo" src="../img/header/logo.png" />
-          <span>Let's <span class="accenttext">work</span></span>
-        </div>
-        <div>
-          <span>together</span>
-        </div>
+<section>
+  <div class="container">
+    <div class="seactionheader">
+      <div class="seactionheaderline">
+        <img class="logo" src="./img/header/logo.png" />
+        <span>Let's <span class="accenttext">work</span></span>
       </div>
-      <form id="contactForm">
-        <div class="inputsection">
-          <input
-            type="email"
-            class="inputarea"
-            name="email"
-            id="email"
-            required
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-            placeholder="clients@gmail.com"
-          />
-          <input
-            type="text"
-            class="inputarea"
-            name="comments"
-            id="comments"
-            required
-            placeholder="comments"
-          />
-        </div>
-        <button class="btnsubmit" type="submit">Send</button>
-      </form>
-      <div class="contactarea">
-        <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
-        <a href="tel:+3801111111111">+380 11 1111 11 11</a>
+      <div>
+        <span>together</span>
       </div>
     </div>
-    <div id="modal" style="display: none">
-      <div class="modal-container">
-        <h3 id="modaltitle" class="title">
-          Thank you for your interest in cooperation!
-        </h3>
-        <a id="backdrop" class="backdrop"
-          ><svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M18 6L6 18"
-              stroke="#FAFAFA"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M6 6L18 18"
-              stroke="#FAFAFA"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            /></svg
-        ></a>
-        <p id="lowercase" class="lowercase">
-          The manager will contact you shortly to discuss further details and
-          opportunities for cooperation. Please stay in touch.
-        </p>
+    <form id="contactForm">
+      <div class="inputsection">
+        <input
+          type="email"
+          class="inputarea"
+          name="email"
+          id="email"
+          required
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          placeholder="clients@gmail.com"
+        />
+        <input
+          type="text"
+          class="inputarea"
+          name="comments"
+          id="comments"
+          required
+          placeholder="comments"
+        />
       </div>
+      <button class="btnsubmit" type="submit">Send</button>
+    </form>
+    <div class="contactarea">
+      <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+      <a href="tel:+3801111111111">+380 11 1111 11 11</a>
     </div>
-  </section>
-  <script src="../js/work_together.js"></script>
-</html>
+  </div>
+  <div id="modal" style="display: none">
+    <div class="modal-container">
+      <h3 id="modaltitle" class="title">
+        Thank you for your interest in cooperation!
+      </h3>
+      <a id="backdrop" class="backdrop"
+        ><svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 6L6 18"
+            stroke="#FAFAFA"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M6 6L18 18"
+            stroke="#FAFAFA"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          /></svg
+      ></a>
+      <p id="lowercase" class="lowercase">
+        The manager will contact you shortly to discuss further details and
+        opportunities for cooperation. Please stay in touch.
+      </p>
+    </div>
+  </div>
+</section>
+<script src="./js/work_together.js"></script>
