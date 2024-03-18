@@ -15,19 +15,19 @@
  
 }
 
-/* .right {
+.right {
     animation-name: marqueeLineRight;
-    animation-duration: 5s;
+    animation-duration: 25s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 .left {
     animation-name: marqueeLineLeft;
-    animation-duration: 5s;
+    animation-duration: 15s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-} */
+}
 
 .image-other {
     flex-shrink: 0;
@@ -91,22 +91,22 @@
     }
 }
 
-/* @keyframes marqueeLineRight {
+@keyframes marqueeLineRight {
     from {
-      transform: translateX(0%);
+      transform: translateX(80%);
     }
     
     to {
-      transform: translateX(-150%);
+      transform: translateX(-72%);
     }
   }
 
   @keyframes marqueeLineLeft {
     from {
-      transform: translateX(-100%);
+      transform: translateX(-52%);
     }
     
     to {
-      transform: translateX(150%);
+      transform: translateX(60%);
     }
-  } */
+  }
