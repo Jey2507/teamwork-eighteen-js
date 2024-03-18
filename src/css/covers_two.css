@@ -1,12 +1,4 @@
-.static-section {
-    width: 375px;
-    height: 508px;
-    background-image: url("../img/covers/back_tel.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-}
+
 
 .div-rotate {
     display: flex;
@@ -41,6 +33,31 @@
     flex-shrink: 0;
     max-width: 282.29px;
     height: 162.94px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .static-section {
+      width: 100%;
+      height: 508px;
+      background-image: url("../img/covers/back_tel.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+  }
+  
+
+@media screen and (min-width: 375px) {
+    .static-section {
+        width: 375px;
+        height: 508px;
+        background-image: url("../img/covers/back_tel.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      overflow: hidden;
+      margin: 0 auto;
+    }
 }
 
 @media screen and (min-width: 768px) {
