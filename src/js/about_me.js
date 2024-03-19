@@ -43,17 +43,24 @@ nextButtonSk.addEventListener('click', function () {
 
 const slides = document.querySelectorAll('.skill-item');
 
+slides.forEach(slide => {
+  slide.addEventListener('click', function () {
+    const currentActiveSlide = document.querySelector('.active-slide');
+
+    currentActiveSlide.classList.remove('active-slide');
+    slide.classList.add('active-slide');
+  });
+});
+
 nextButtonSk.addEventListener('click', function () {
   const activeSlide = document.querySelector('.active-slide');
-  const activeIndex = Array.from(slides).indexOf(activeSlide); // Отримуємо індекс активного слайда
-
+  const activeIndex = Array.from(slides).indexOf(activeSlide);
   activeSlide.classList.remove('active-slide');
 
-  let nextIndex = (activeIndex + 1) % slides.length; // Визначаємо індекс наступного слайда (з зацикленням)
+  let nextIndex = (activeIndex + 1) % slides.length;
   if (nextIndex === 0) {
-    // Перевіряємо, чи індекс наступного слайда дорівнює 0
-    slides[nextIndex].classList.add('active-slide'); // Робимо перший слайд активним
+    slides[nextIndex].classList.add('active-slide');
   } else {
-    slides[nextIndex].classList.add('active-slide'); // Додаємо клас active-slide на наступний слайд
+    slides[nextIndex].classList.add('active-slide');
   }
 });
