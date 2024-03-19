@@ -1,5 +1,6 @@
 /* Header Styles */
 .header {
+  font-family: inherit;
     position: absolute;
     top: 32px;
     left: 16px;
@@ -70,9 +71,13 @@
     left: 0; 
     width: 100vw; 
     height: 100vh; 
-    background-image: 
-  linear-gradient(90deg, rgba(28, 29, 32, 0.8) 49.68%, rgba(0, 25, 88, 0.8) 67.73%, rgba(0, 65, 232, 0.8) 100%), 
-  url("../img/header/Glass-effect.jpg");
+    background-color: #1C1D20;
+    background-image:
+    url(../img/hero-background/Glass-effect.png);
+background-repeat: no-repeat; 
+background-size: 50% 100%;
+background-position: left top;
+background-color:linear-gradient(90.11deg, #1C1D20 49.69%, #001958 67.71%, #0041E8 99.91%);
 
  
 
@@ -142,6 +147,13 @@
 
 @media screen and (min-width: 768px) {
 
+  .header {
+      top: 32px;
+      left: 32px;
+      right: 32px;
+      }
+  
+
     .tablet-desctop-elements {
         width: 100%;
         display: flex;
@@ -207,11 +219,4 @@
 
 
 
-
-
-
-.projects{
-  margin-top: 1000px;
-  background-color:#69292d;
-}
 

@@ -5,4 +5,5 @@ import './js/covers';
 import './js/covers_two'
 import './js/work_together';
 import './js/faq'
+import './js/header'
 
