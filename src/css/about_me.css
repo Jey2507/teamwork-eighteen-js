@@ -183,6 +183,9 @@
   height: 28px;
   stroke: #3b3b3b;
 }
+.swipe-arrow-right{
+transform: scale(-1, 1);
+}
 
 @media screen and (min-width: 768px) {
   .about-me-header {

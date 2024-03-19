@@ -4,6 +4,7 @@ import 'swiper/css';
 
 const accordion = new Accordion('.about-me-list', {
   showMultiple: true,
+  openOnInit: [0],
 });
 
 const accordionItems = document.querySelectorAll('.ac-list-item');
@@ -21,7 +22,7 @@ accordionItems.forEach(item => {
     }
   });
 });
-
+//--------------SWIPER----------------------------------//
 const prevButtonSk = document.querySelector('.btn-prev');
 const nextButtonSk = document.querySelector('.btn-next');
 prevButtonSk.style.display = 'none';

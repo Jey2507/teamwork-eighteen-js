@@ -1,7 +1,10 @@
 import Swiper from 'swiper';
 import 'swiper/css';
 
-const swiper = new Swiper('.swiper', {
+const prevButton = document.querySelector('.pr-btn-prev');
+const nextButton = document.querySelector('.pr-btn-next');
+
+const swiperProjects = new Swiper('.swiper', {
   preventInteractionOnTransition: true,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -9,20 +12,17 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-var prevButton = document.querySelector('.swiper-button-prev');
-var nextButton = document.querySelector('.swiper-button-next');
-
 prevButton.disabled = true;
 
 prevButton.addEventListener('click', function () {
-  swiper.slidePrev();
+  swiperProjects.slidePrev();
 });
 
 nextButton.addEventListener('click', function () {
-  swiper.slideNext();
+  swiperProjects.slideNext();
 });
 
-swiper.on('slideChange', function () {
-  nextButton.disabled = swiper.isEnd ? true : false;
-  prevButton.disabled = swiper.isBeginning ? true : false;
+swiperProjects.on('slideChange', function () {
+  nextButton.disabled = swiperProjects.isEnd ? true : false;
+  prevButton.disabled = swiperProjects.isBeginning ? true : false;
 });
