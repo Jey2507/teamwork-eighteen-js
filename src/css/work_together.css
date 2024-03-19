@@ -7,7 +7,7 @@ footer {
   background-size: 133% 100%;
   background-position: right top;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
+  display: ruby-text;
 }
 
 .accenttext {
@@ -159,6 +159,9 @@ footer {
     font-size: 40px;
     margin-bottom: 64px;
   }
+  .contactarea {
+    gap: 4px
+  }
   .logo {
     width: 40px;
     height: 40px;
@@ -198,6 +201,9 @@ footer {
     padding-bottom: 169px;
     background-position: right 33% top;
   }
+  .contactarea {
+    gap: 8px
+  }
   .btnsubmit {
     height: 150px;
     width: 150px;
@@ -225,6 +231,9 @@ footer {
   }
   .inputarea {
     margin-right: 32px;
+  }
+  .contactarea {
+    gap: 8px
   }
   #email:valid + .email-validation-msg::after {
     position: absolute;
