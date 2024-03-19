@@ -21,7 +21,8 @@
 
 .reviews-item:hover {
 	box-shadow: 0 0 20px 2px var(--accent-color-hover);
-	scale: 1.02;
+	scale: 1.01;
+
 
 }
 
@@ -44,7 +45,6 @@
 .reviews-item-box {
 	position: relative;
 	height: 302px;
-	display: inline-block;
 	padding: 32px 24px 32px 24px;
 	border: 1px solid var(--border-color);
 	border-radius: 20px;
@@ -148,6 +148,7 @@
 
 
 @media screen and (min-width: 768px) {
+
 
 	.reviews-item {
 		display: flex;

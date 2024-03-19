@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 	const swiperReview = new Swiper('.swiper-container', {
 		direction: 'horizontal',
 		slidesPerView: 'auto',
+		slidesPerGroup: 1,
 		spaceBetween: 16,
 		pagination: {
 			el: '.swiper-pagination',
