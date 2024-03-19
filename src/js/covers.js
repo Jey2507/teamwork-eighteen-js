@@ -32,7 +32,23 @@ document.addEventListener('DOMContentLoaded', async () => {
 			nextEl: '.swiper-button-next-review',
 			prevEl: '.swiper-button-prev-review',
 		},
-
+		breakpoints: {
+			
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 16
+			},
+			
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 16
+			},
+			
+			1440: {
+				slidesPerView: 4,
+				spaceBetween: 16
+			}
+		}
 	});
 
 	buttonLeft.disabled = true;
