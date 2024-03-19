@@ -22,35 +22,38 @@ accordionItems.forEach(item => {
     }
   });
 });
-//--------------SWIPER----------------------------------//
-const prevButtonSk = document.querySelector('.btn-prev');
-const nextButtonSk = document.querySelector('.btn-next');
-prevButtonSk.style.display = 'none';
 
-const swiperSkills = new Swiper('.swiper-project', {
+//--------------SWIPER----------------------------------//
+
+const nextButtonSk = document.querySelector('.swiper-skills-btn');
+
+const swiperSkills = new Swiper('.swiper-about', {
   preventInteractionOnTransition: true,
-  // slidesPerView: 2,
-  on: {
-    slideChange: function () {
-      nextButtonSk.style.display = swiperSkills.isEnd ? 'none' : 'block';
-      prevButtonSk.style.display = swiperSkills.isBeginning ? 'none' : 'block';
-    },
-  },
+  slidesPerView: 2,
+  spaceBetween: 0,
+  loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
   },
-});
-
-prevButtonSk.addEventListener('click', function () {
-  swiperSkills.slidePrev();
 });
 
 nextButtonSk.addEventListener('click', function () {
   swiperSkills.slideNext();
 });
 
-// swiperSkills.on('slideChange', function () {
-//   nextButtonSk.disabled = swiperSkills.isEnd ? true : false;
-//   prevButtonSk.disabled = swiperSkills.isBeginning ? true : false;
-// });
+const slides = document.querySelectorAll('.skill-item');
+
+nextButtonSk.addEventListener('click', function () {
+  const activeSlide = document.querySelector('.active-slide');
+  const activeIndex = Array.from(slides).indexOf(activeSlide); // Отримуємо індекс активного слайда
+
+  activeSlide.classList.remove('active-slide');
+
+  let nextIndex = (activeIndex + 1) % slides.length; // Визначаємо індекс наступного слайда (з зацикленням)
+  if (nextIndex === 0) {
+    // Перевіряємо, чи індекс наступного слайда дорівнює 0
+    slides[nextIndex].classList.add('active-slide'); // Робимо перший слайд активним
+  } else {
+    slides[nextIndex].classList.add('active-slide'); // Додаємо клас active-slide на наступний слайд
+  }
+});
