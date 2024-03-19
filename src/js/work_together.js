@@ -33,12 +33,18 @@ const modalTitle = document.querySelector('#modaltitle');
 const modalMessage = document.querySelector('#lowercase');
 
 function closeModal() {
-  modal.style.display = 'none';
+  modal.classList.remove('visible')
+  setTimeout(()=> {
+    modal.classList.add('hidden');
+  }, 250)
   document.body.style.overflow = '';
 }
 
 function showModal(title, message) {
-  modal.style.display = 'flex';
+  modal.classList.remove('hidden');
+  setTimeout(()=> {
+    modal.classList.add('visible');
+  }, 10)
   modalTitle.textContent = title;
   modalMessage.textContent = message;
   document.body.style.overflow = 'hidden';

@@ -1,4 +1,4 @@
-<section id="work_together">
+<section class="section" id="work_together">
   <div class="container">
     <div class="seactionheader">
       <div class="seactionheaderline">
@@ -11,22 +11,25 @@
     </div>
     <form id="contactForm">
       <div class="inputsection">
+        <div class="input-container">
         <input
           type="email"
           class="inputarea"
           name="email"
           id="email"
           required
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           placeholder="clients@gmail.com"
         />
+        <div class="email-validation-msg"></div>
+      </div>
+      <div class="input-container">
         <input
           type="text"
           class="inputarea"
           name="comments"
           id="comments"
           required
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
           placeholder="comments"
         />
       </div>
@@ -38,7 +41,7 @@
     </div>
   </div>
 </section>
-<div id="modal" style="display: none">
+<div id="modal" class="hidden">
   <div class="modal-container">
     <h3 id="modaltitle" class="title">
       Thank you for your interest in cooperation!
