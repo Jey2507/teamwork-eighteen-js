@@ -4,21 +4,26 @@ const YouTube = document.getElementById('YT');
 const GitHub= document.getElementById('GH');
 
 
+Instargam.addEventListener('click', () => {
+  const url = 'https://www.instagram.com/goitclub/';
+  const pageFeatures = 'width=800,height=600,scrollbars=yes,resizable=yes';
+  page.open(url, '_blank', pageFeatures);
+});
 
 Facebook.addEventListener('click', () => {
-  window.location.href = 'https://www.facebook.com/goITclub/';
+  const url = 'https://www.facebook.com/goITclub/';
+  const pageFeatures = 'width=800,height=600,scrollbars=yes,resizable=yes';
+  page.open(url, '_blank', pageFeatures);
 });
 
 YouTube.addEventListener('click', () => {
-  window.location.href = 'https://www.youtube.com/c/GoIT';
+  const url = 'https://www.youtube.com/c/GoIT';
+  const pageFeatures = 'width=800,height=600,scrollbars=yes,resizable=yes';
+  page.open(url, '_blank', pageFeatures);
 });
 
 GitHub.addEventListener('click', () => {
-  window.location.href = 'https://github.com/Jey2507/teamwork-eighteen-js';
-});
-
-Instargam.addEventListener('click', () => {
-  const url = 'https://www.instagram.com/goitclub/';
-  const windowFeatures = 'width=800,height=600,scrollbars=yes,resizable=yes';
-  window.open(url, '_blank', windowFeatures);
+  const url = 'https://github.com/Jey2507/teamwork-eighteen-js';
+  const pageFeatures = 'width=800,height=600,scrollbars=yes,resizable=yes';
+  page.open(url, '_blank', pageFeatures);
 });
