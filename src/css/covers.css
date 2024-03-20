@@ -7,7 +7,13 @@
 
 /*mobile style*/
 
+
+
+
+
 .reviews-list {
+	height: 310px;
+	width: 100%;
 	margin-bottom: 32px;
 }
 
@@ -122,6 +128,9 @@
 
 }
 
+.btn-left {
+	transform: scale(-1, 1);
+}
 
 .btn-svg {
 	stroke: #fafafa;
@@ -149,7 +158,6 @@
 
 
 	.reviews-item {
-
 		width: calc((100% - 16px) / 2);
 	}
 
@@ -168,13 +176,11 @@
 
 	.reviews-item:hover {
 		position: relative;
-		box-shadow: 0 0 20px 2px var(--accent-color-hover);
+		box-shadow: inset 0 0 20px var(--accent-color-hover);
+		/*box-shadow: 0 0 20px 2px var(--accent-color-hover);*/
 		scale: 1.01;
 
 	}
-
-
-
 
 
 }
