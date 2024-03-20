@@ -132,25 +132,34 @@
   transition-property: height, visibility;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /*  SKILLS SWIPER */
 
-.skills-container {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  justify-content: space-between;
-  gap: 55px;
+.swiper-about-container {
+  position: relative;
 }
 
-.skills-list.swiper-wrapper {
-  max-width: 260px;
+.swiper-about.swiper {
+  width: 260px;
+  margin: 0;
+  position: static;
 }
 
 .swiper-skills-btn {
-  width: 28px;
-  height: 28px;
-  background-color: transparent;
-  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swipe-arrow {
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swiper-skills-btn:hover .swipe-arrow,
+.swiper-skills-btn:focus .swipe-arrow {
+  stroke: var(--accent-color);
 }
 
 .skill-item.swiper-slide {
@@ -162,6 +171,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active-slide {
+  background-color: var(--accent-color);
+  border: none;
 }
 
 .skill-text {
@@ -172,16 +187,24 @@
   color: var(--main-text);
 }
 
+.swiper-skills-btn {
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.swipe-arrow {
+  width: 100%;
+  height: 100%;
+  stroke: #3b3b3b;
+}
+
 .skill-item:hover,
 .skill-item:focus {
   background-color: var(--accent-color);
   border: none;
-}
-
-.swipe-arrow {
-  width: 28px;
-  height: 28px;
-  stroke: #3b3b3b;
 }
 
 @media screen and (min-width: 768px) {
@@ -221,17 +244,8 @@
     margin-bottom: 4px;
   }
 
-  .skills-container {
-    gap: 64px;
-  }
-
-  .skills-list.swiper-wrapper {
-    max-width: 600px;
-  }
-
-  .swiper-skills-btn {
-    width: 40px;
-    height: 40px;
+  .swiper-about.swiper {
+    width: 600px;
   }
 
   .skill-item.swiper-slide {
@@ -240,10 +254,10 @@
   }
 
   .skill-text {
-    font-size: 20px;
+    font-size: 16px;
   }
 
-  .swipe-arrow {
+  .swiper-skills-btn {
     width: 40px;
     height: 40px;
   }
@@ -275,11 +289,7 @@
     margin-bottom: 20px;
   }
 
-  .skills-container {
-    gap: 72px;
-  }
-
-  .skills-list.swiper-wrapper {
-    max-width: 1312px;
+  .swiper-about.swiper {
+    width: 1200px;
   }
 }
