@@ -1,88 +1,71 @@
 /* Header Styles */
-.header {
+  .header-section {
     position: absolute;
     top: 32px;
     left: 16px;
     right: 16px;
     height: 80px;
-    background-color: transparent; 
-    z-index: 1000; 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    background-color: transparent;
+    display: block;
   }
-
-  #dropdownContent {
+  .menu-title{
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  
+  .tablet-order-button {
     display: none;
-}
-
+  }
   .dropdown{
     display: none;
   }
-
-  .tablet-order-button{
-    display: none;
+  .dropdown-item{
+    margin-bottom: 5px;
   }
-  
-  .logo {
+  .logo-header {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+  }
+  .text-jefferson{
+    display: flex;
     gap: 8px;
-      
   }
   
   .logo-img {
     width: 80px;
     height: 80px;
   }
-  
-  .icon-jefferson {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: white;
-    fill: white;
-    width: 4.42em;
+
+  .text-nav-menu{
+    font-size: 16px;
   }
-  
-  
-  .icon-menu-x {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: white;
-    fill: white;
-    position: absolute;
-    top: 33px;
-    right: 18px;
-}
+  .nav-menu-mob{
+    display: none;
+  }
 
-.nav-menu{
-    display: none; 
-}
-
-.nav-menu.active {
-    position: fixed; 
-    z-index: 10000;
+  .nav-menu-mob.active {
+    position: fixed;
+    display: flex; 
+    z-index: 10;
+    overflow: hidden;
     top: 0; 
     left: 0; 
     width: 100vw; 
     height: 100vh; 
-    background-image: 
-  linear-gradient(90deg, rgba(28, 29, 32, 0.8) 49.68%, rgba(0, 25, 88, 0.8) 67.73%, rgba(0, 65, 232, 0.8) 100%), 
-  url("../img/header/Glass-effect.jpg");
-
- 
-
-    display: flex;
+    background-color: #1C1D20;
+    background-image:
+    url(../img/header/glass-effect.png);
+    background-repeat: no-repeat;
+    background-size:80% 100%;
+    background-position: left top;
+    background-color: linear-gradient(90.11deg, #1C1D20 49.69%, #001958 67.71%, #0041E8 99.91%);
     flex-direction: column;
     justify-content: space-between;
-
-    backdrop-filter: blur(4px);
-}
-
+  }
+    .nav-menu-mob.active .dropdown-content{
+      display: flex;
+      max-height: 500px;
+    }
   
 .nav-links{
     display: flex;
@@ -103,7 +86,6 @@
   .order-button{
     display: block;
     margin: 0 auto;
-    font-weight: 500;
     font-size: 14px;
     letter-spacing: -0.02em;
     border: none;
@@ -112,14 +94,15 @@
     width: 164px;
     height: 45px;
     color: #FAFAFA;
-    background-color: #ED3B44;
+    background-color: var(--accent-color-hover);
     text-align: center; 
     margin-bottom: 64px;
-   
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .order-button:hover{
-    background-color:#E0373F;
+  .order-button:hover,
+  .order-button:active {
+    color: var(--accent-color-hover);
   }
   
  
@@ -132,16 +115,36 @@
     .close-menu {
       display: block;
       position: absolute;
-      top: 10px;
-      right: 10px;
+      top: 32px;
+      right: 16px;
       cursor: pointer;
     }
   
+    .no-scroll{
+      overflow: hidden;
+    }
+    .menu-title{
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .scroll,
+    .nav-link{
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .menu-title:hover,
+    .menu-title:active,
+    .scroll:hover,
+    .scroll:active,
+    .nav-link:hover,
+    .nav-link:active{
+      color: var(--accent-color-hover);
+    }
 
 /* ============== HEADER TABLET STYLES ============== */
 
 @media screen and (min-width: 768px) {
-
+    .header-section{
+      display: flex;
+    }
     .tablet-desctop-elements {
         width: 100%;
         display: flex;
@@ -153,7 +156,7 @@
         display: none;
     }
 
-    .nav-menu {      
+    .nav-menu-mob {      
         display: none;
     }
 
@@ -163,29 +166,19 @@
         font-weight: 500;
         font-size: 16px;
         letter-spacing: -0.02em;
-        text-decoration: underline;
-        color: white;
         align-items: center;
       
     }
 
     .dropdown-content {
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         position: absolute;
         z-index: 1;
         margin-top: 32px;
+        transition: max-height 250ms cubic-bezier(0.4, 0, 0.2, 1);
        }
-
-    
-    .dropdown-content a { 
-        text-decoration: none;
-       display: block;
-       padding-bottom: 16px;
-      
-        
-    }
   
     .tablet-order-button {
         display: block;
@@ -198,20 +191,14 @@
         width: 164px;
         height: 45px;
         color: #FAFAFA;
-        background-color: #ED3B44;
+        background-color: var(--accent-color-hover);
         text-align: center; 
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .tablet-order-button:hover,
+    .tablet-order-button:active{
+      box-shadow: 0 0 20px 2px var(--accent-color-hover);
     }
 }
 
-
-
-
-
-
-
-
-.projects{
-  margin-top: 1000px;
-  background-color:#69292d;
-}
 
