@@ -22,7 +22,6 @@
         justify-content: flex-start;
         flex-direction: column;
         gap: 16px;
-            
     }
 
     .list-item-benefits {
@@ -33,7 +32,6 @@
         border-radius: 20px;
         padding: 24px;
         background: var(--cards);
-
     }
 
     .title-benefits {
@@ -89,7 +87,6 @@
         color: var(--main-text);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
     
     .text-btn-benefits:hover{
         color: var(--accent-color-hover);
@@ -104,13 +101,10 @@
         cursor: pointer;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
-    
+   
     .btn-benefits:hover{
     border-color: var(--accent-color-hover);
     }
-
-
 
 @media screen and (min-width: 768px) {
        
@@ -127,9 +121,6 @@
         margin-top: 64px;
     }
 }
-
-
-
 
 
 @media screen and (min-width: 1440px) {
