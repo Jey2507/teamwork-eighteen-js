@@ -109,7 +109,6 @@
     .burger-menu {
       display: block;
     }
-        
       
   
     .close-menu {
@@ -160,26 +159,53 @@
         display: none;
     }
 
-    .dropdown {
-        display: flex;
-        flex-direction: column;
-        font-weight: 500;
-        font-size: 16px;
-        letter-spacing: -0.02em;
-        align-items: center;
-      
-    }
 
-    .dropdown-content {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        z-index: 1;
-        margin-top: 32px;
-        transition: max-height 250ms cubic-bezier(0.4, 0, 0.2, 1);
-       }
+    .dropdown {
+      display: flex;
+      flex-direction: column;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: -0.02em;
+      align-items: center;
+  }
   
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      margin-top: 32px;
+      overflow: hidden; 
+      max-height: 0; 
+      transition: max-height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+   #dropdownContent {
+    list-style-type: none;
+  }
+  
+  #dropdownContent li {
+    margin-bottom: 16px;
+    transition: max-height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  #dropdownContent h3 {
+    margin-bottom: 32px;
+  }
+
+  .dropdown-item {
+    opacity: 0;
+    transition: opacity 0.5s ease; /* або будь-який інший перехід */
+  }
+  
+  .dropdown-item.show {
+    opacity: 1;
+  }
+
+
+.menu-title{
+  margin-bottom: 32px;
+}
+
     .tablet-order-button {
         display: block;
         font-weight: 500;
