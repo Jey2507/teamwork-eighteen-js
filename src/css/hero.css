@@ -1,12 +1,11 @@
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
     .hero-container {
-        background-image:
+        background-image: linear-gradient(90.11deg, #1C1D20 49.69%, #001958 67.71%, #0041E8 99.91%),
         url(../img/hero-background/Glass-effect.png);
         background-repeat: no-repeat; 
         background-size: 50% 100%;
         background-position: left top;
-        background-color:linear-gradient(90.11deg, #1C1D20 49.69%, #001958 67.71%, #0041E8 99.91%);
         width: 100%;
         height: 100%;
         margin: 0 auto;
@@ -101,12 +100,11 @@
 
 @media screen and (min-width: 375px) {
     .hero-container {
-        background-image:
+        background-image: linear-gradient(90.11deg, #1C1D20 49.69%, #001958 67.71%, #0041E8 99.91%),
         url(../img/hero-background/Glass-effect.png);
         background-repeat: no-repeat; 
         background-size: 50% 100%;
         background-position: left top;
-        background-color:linear-gradient(90.11deg, #1C1D20 49.69%, #001958 67.71%, #0041E8 99.91%);
         width: 100%;
         height: 100%;
         margin: 0 auto;
