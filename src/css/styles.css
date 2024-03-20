@@ -10,8 +10,8 @@
 @import url('./work_together.css');
 
 :root {
-  --accent-color: #0041E8;
-  --accent-color-hover:  #0041F5;
+  --accent-color: #0041e8;
+  --accent-color-hover: #0041f5;
   --main-text: #fafafa;
   --section-text: rgba(250, 250, 250, 0.4);
   --section-faq-text: rgba(250, 250, 250, 0.4);
