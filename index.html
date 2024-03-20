@@ -16,7 +16,7 @@
     <script type="module" crossorigin src="/teamwork-eighteen-js/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/teamwork-eighteen-js/assets/vendor-842a7ad1.js">
     <link rel="stylesheet" href="/teamwork-eighteen-js/assets/vendor-7c8ef494.css">
-    <link rel="stylesheet" href="/teamwork-eighteen-js/assets/index-919d9290.css">
+    <link rel="stylesheet" href="/teamwork-eighteen-js/assets/index-59722cd5.css">
   </head>
   <body>
     <header>
@@ -221,47 +221,40 @@
       </ul>
     </div>
 
-    <div class="skills-container swiper-project">
-      <button
-        type="button"
-        class="swiper-skills-btn swiper-button-prev btn-prev"
-      >
-        <svg class="swipe-arrow swipe-arrow-right">
-          <use href="/teamwork-eighteen-js/assets/icons-6d12d8a2.svg#icon-arrow-narrow-right" />
-        </svg>
-      </button>
-      <ul class="skills-list swiper-wrapper">
-        <li class="skill-item swiper-slide">
-          <p class="skill-text">HTML/CSS</p>
-        </li>
-        <li class="skill-item swiper-slide">
-          <p class="skill-text">JavaScript</p>
-        </li>
-        <li class="skill-item swiper-slide">
-          <p class="skill-text">React</p>
-        </li>
-        <li class="skill-item swiper-slide">
-          <p class="skill-text">Node.js</p>
-        </li>
-        <li class="skill-item swiper-slide">
-          <p class="skill-text">React Native</p>
-        </li>
-        <li class="skill-item swiper-slide">
-          <p class="skill-text">Soft skills</p>
-        </li>
-      </ul>
-
-      <button
-        type="button"
-        class="swiper-skills-btn swiper-button-next btn-next"
-      >
-        <svg class="swipe-arrow">
-          <use
-            class="swipe-arrow-icon"
-            href="/teamwork-eighteen-js/assets/icons-6d12d8a2.svg#icon-arrow-narrow-right"
-          />
-        </svg>
-      </button>
+    <div class="swiper-about-container">
+      <div class="swiper-about swiper">
+        <ul class="skills-list swiper-wrapper">
+          <li class="skill-item swiper-slide active-slide">
+            <p class="skill-text">HTML/CSS</p>
+          </li>
+          <li class="skill-item swiper-slide">
+            <p class="skill-text">JavaScript</p>
+          </li>
+          <li class="skill-item swiper-slide">
+            <p class="skill-text">React</p>
+          </li>
+          <li class="skill-item swiper-slide">
+            <p class="skill-text">Node.js</p>
+          </li>
+          <li class="skill-item swiper-slide">
+            <p class="skill-text">React Native</p>
+          </li>
+          <li class="skill-item swiper-slide">
+            <p class="skill-text">Soft skills</p>
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="swiper-skills-btn swiper-button-next btn-next"
+        >
+          <svg class="swipe-arrow">
+            <use
+              class="swipe-arrow-icon"
+              href="/teamwork-eighteen-js/assets/icons-6d12d8a2.svg#icon-arrow-narrow-right"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>
@@ -332,7 +325,7 @@
       <section class="section" id="projects">
   <div class="container">
     <h2 class="sections-title">Projects</h2>
-    <div class="swiper">
+    <div class="swiper swiper-projects">
       <ul class="projects-list swiper-wrapper">
         <li class="projects-list-item swiper-slide">
           <div class="project-info-thumb">
