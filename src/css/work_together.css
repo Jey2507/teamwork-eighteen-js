@@ -1,7 +1,17 @@
-section {
+
+footer {
+  padding-top: 80px;
+  padding-bottom: 169px;
+  margin: 0;
+  background-image: url('../img/work_together/glass_effect2png.png');
+  background-repeat: no-repeat;
+  background-size: 133% 100%;
+  background-position: right top;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
+  display: ruby-text;
 }
+
 .accenttext {
   color: var(--accent-color);
 }
@@ -61,6 +71,7 @@ section {
   padding: 0 0 20px 0;
   margin-right: 32px;
   width: 390px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .inputarea::placeholder {
@@ -81,11 +92,27 @@ section {
   -webkit-box-shadow: 0 0 0 1000px #1c1d20 inset !important;
   -webkit-text-fill-color: white !important;
 }
+.input-container {
+  display: inline-block;
+}
 
 #email:not(:placeholder-shown):invalid {
   border-bottom: 1px solid #e74a3b;
 }
-
+#email:valid + .email-validation-msg::after {
+  content: 'Succes!';
+  color: #3cbc81;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+}
+#email:not(:placeholder-shown):invalid + .email-validation-msg::after {
+  content: 'Invalid email, try again';
+  color: #e74a3b;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+}
 #email:valid {
   border-bottom: 1px solid #3cbc81;
 }
@@ -93,49 +120,61 @@ section {
 #email:focus {
   border-bottom: 1px solid rgba(250, 250, 250, 0.6);
 }
-#comments:not(:placeholder-shown):invalid {
-  border-bottom: 1px solid #e74a3b;
-}
 
-#comments:valid {
-  border-bottom: 1px solid #3cbc81;
+#comments {
+  text-overflow: ellipsis;
 }
-
-#comments:focus {
-  border-bottom: 1px solid rgba(250, 250, 250, 0.6);
-}
-
 .contactarea a {
   font-family: 'Inter Tight', sans-serif;
   color: var(--main-text);
   background-color: transparent;
   border-radius: 60px;
   border: 1px solid rgba(250, 250, 250, 0.2);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contactarea a:hover,
-.contactarea a:active {
-  border: 1px solid var(--accent-color-hover);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.contactarea a:hover {
+  border: 1px solid rgba(250, 250, 250, 1);
 }
 
 .contactarea {
   margin-top: 18px;
   gap: 8px;
   display: flex;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 @media screen and (min-width: 320px) {
+  #work_together div {
+    max-width: 375px;
+  }
+  #email:not(:placeholder-shown):invalid + .email-validation-msg::after {
+    position: relative;
+  }
+  #email:valid + .email-validation-msg::after {
+    position: relative;
+  }
+  footer {
+    padding-top: 80px;
+    padding-bottom: 32px;
+    background-size: 150% 100%;
+    background-position: right 75% top;
+  }
   .seactionheader {
     font-size: 40px;
     margin-bottom: 64px;
   }
+  .contactarea {
+    gap: 4px
+  }
   .logo {
     width: 40px;
     height: 40px;
+  }
+  .inputarea {
+    width: 342px;
+    margin-right: 0;
   }
   .btnsubmit {
     margin-left: 0;
@@ -143,7 +182,7 @@ section {
     height: 100px;
     width: 100px;
   }
-  .inputarea {
+  .input-container {
     margin-bottom: 16px;
   }
   .contactarea {
@@ -156,13 +195,58 @@ section {
 }
 
 @media screen and (min-width: 768px) {
+  #work_together div {
+    max-width: 768px;
+  }
+  .inputarea {
+    margin-right: 32px;
+  }
+  footer {
+    padding-top: 80px;
+    background-size: 125% 100%;
+    padding-bottom: 169px;
+    background-position: right 33% top;
+  }
+  .contactarea {
+    gap: 8px
+  }
+  .btnsubmit {
+    height: 150px;
+    width: 150px;
+  }
   .inputarea {
     width: 245px;
     margin-bottom: 0;
   }
+  #email:not(:placeholder-shown):invalid + .email-validation-msg::after {
+    position: absolute;
+  }
+  #email:valid + .email-validation-msg::after {
+    position: absolute;
+  }
 }
 
 @media screen and (min-width: 1445px) {
+  #work_together div {
+    max-width: 1440px;
+  }
+  footer {
+    padding-top: 80px;
+    padding-bottom: 169px;
+    background-position: right -17% top;
+  }
+  .inputarea {
+    margin-right: 32px;
+  }
+  .contactarea {
+    gap: 8px
+  }
+  #email:valid + .email-validation-msg::after {
+    position: absolute;
+  }
+  #email:not(:placeholder-shown):invalid + .email-validation-msg::after {
+    position: absolute;
+  }
   .seactionheader {
     font-size: 64px;
     margin-bottom: 18px;
@@ -172,7 +256,7 @@ section {
     width: 70px;
   }
   .btnsubmit {
-    margin-left: 0;
+    margin-left: 86px;
     margin-top: 16px;
     height: 150px;
     width: 150px;
@@ -202,7 +286,10 @@ section {
   bottom: 0;
   display: flex;
   text-align: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 9999;
+  position: fixed;
 }
 .title {
   color: var(--main-text);
@@ -230,6 +317,17 @@ section {
   position: relative;
   text-align: center;
   margin: auto;
+  transform: scale(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#modal.visible {
+  opacity: 1;
+}
+#modal.visible .modal-container {
+  transform: scale(1);
+}
+.hidden {
+  display: none !important;
 }
 .backdrop {
   position: absolute;
