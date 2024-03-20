@@ -29,13 +29,33 @@ const nextButtonSk = document.querySelector('.swiper-skills-btn');
 
 const swiperSkills = new Swiper('.swiper-about', {
   preventInteractionOnTransition: true,
-  slidesPerView: 2,
+  // slidesPerView: 6,
   spaceBetween: 0,
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
   },
 });
+
+function setSlidesPerView() {
+  const screenWidth = window.innerWidth;
+  let slidesPerView;
+
+  if (screenWidth >= 1440) {
+    slidesPerView = 6;
+  } else if (screenWidth >= 768) {
+    slidesPerView = 3;
+  } else {
+    slidesPerView = 2;
+  }
+
+  swiperSkills.params.slidesPerView = slidesPerView;
+  swiperSkills.update();
+}
+
+setSlidesPerView();
+
+window.addEventListener('resize', setSlidesPerView);
 
 nextButtonSk.addEventListener('click', function () {
   swiperSkills.slideNext();
@@ -58,9 +78,5 @@ nextButtonSk.addEventListener('click', function () {
   activeSlide.classList.remove('active-slide');
 
   let nextIndex = (activeIndex + 1) % slides.length;
-  if (nextIndex === 0) {
-    slides[nextIndex].classList.add('active-slide');
-  } else {
-    slides[nextIndex].classList.add('active-slide');
-  }
+  slides[nextIndex].classList.add('active-slide');
 });

@@ -289,11 +289,7 @@
     margin-bottom: 20px;
   }
 
-  .skills-container {
-    gap: 72px;
-  }
-
-  .skills-list.swiper-wrapper {
-    max-width: 1312px;
+  .swiper-about.swiper {
+    width: 1200px;
   }
 }
