@@ -16,7 +16,7 @@
     <script type="module" crossorigin src="/teamwork-eighteen-js/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/teamwork-eighteen-js/assets/vendor-842a7ad1.js">
     <link rel="stylesheet" href="/teamwork-eighteen-js/assets/vendor-7c8ef494.css">
-    <link rel="stylesheet" href="/teamwork-eighteen-js/assets/index-f454ae34.css">
+    <link rel="stylesheet" href="/teamwork-eighteen-js/assets/index-055ce6a3.css">
   </head>
   <body>
     <header>
@@ -761,7 +761,7 @@
 
     </main>
     <footer>
-      <section>
+      <section class="section" id="work_together">
   <div class="container">
     <div class="seactionheader">
       <div class="seactionheaderline">
@@ -774,22 +774,25 @@
     </div>
     <form id="contactForm">
       <div class="inputsection">
+        <div class="input-container">
         <input
           type="email"
           class="inputarea"
           name="email"
           id="email"
           required
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           placeholder="clients@gmail.com"
         />
+        <div class="email-validation-msg"></div>
+      </div>
+      <div class="input-container">
         <input
           type="text"
           class="inputarea"
           name="comments"
           id="comments"
           required
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
           placeholder="comments"
         />
       </div>
@@ -801,13 +804,13 @@
     </div>
   </div>
 </section>
-<div id="modal" style="display: none">
+<div id="modal" class="hidden">
   <div class="modal-container">
     <h3 id="modaltitle" class="title">
       Thank you for your interest in cooperation!
     </h3>
     <a id="backdrop" class="backdrop"
-      ><svg class="backdrop">
+      ><svg>
         <use class="icon-cross" href="/teamwork-eighteen-js/assets/icons-6d12d8a2.svg#icon-cross" />
       </svg>
     </a>
