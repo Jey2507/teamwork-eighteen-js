@@ -1,5 +1,5 @@
 
-footer {
+.section-footer {
   padding-top: 80px;
   padding-bottom: 169px;
   margin: 0;
@@ -145,17 +145,16 @@ footer {
 }
 
 
-@media screen and (min-width: 320px) {
-  #work_together div {
-    max-width: 375px;
-  }
+@media screen and (min-width: 375px) {
   #email:not(:placeholder-shown):invalid + .email-validation-msg::after {
     position: relative;
   }
   #email:valid + .email-validation-msg::after {
     position: relative;
   }
-  footer {
+
+  .section-footer {
+    width: 375px;
     padding-top: 80px;
     padding-bottom: 32px;
     background-size: 150% 100%;
@@ -195,13 +194,11 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  #work_together div {
-    max-width: 768px;
-  }
   .inputarea {
     margin-right: 32px;
   }
-  footer {
+  .section-footer {
+    width: 768px;
     padding-top: 80px;
     background-size: 125% 100%;
     padding-bottom: 169px;
@@ -218,6 +215,7 @@ footer {
     width: 245px;
     margin-bottom: 0;
   }
+
   #email:not(:placeholder-shown):invalid + .email-validation-msg::after {
     position: absolute;
   }
@@ -226,11 +224,9 @@ footer {
   }
 }
 
-@media screen and (min-width: 1445px) {
-  #work_together div {
-    max-width: 1440px;
-  }
-  footer {
+@media screen and (min-width: 1440px) {
+  .section-footer {
+    width: 1440px;
     padding-top: 80px;
     padding-bottom: 169px;
     background-position: right -17% top;
