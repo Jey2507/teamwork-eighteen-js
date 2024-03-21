@@ -58,4 +58,15 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
   });
 });
 
+document.querySelectorAll('.order-button').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    closeMenu();
+    const targetId = this.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
 toggleCloseMenu.addEventListener('click', closeMenu);
