@@ -9,6 +9,7 @@
 
 .reviews-list {
 	margin-bottom: 32px;
+	height: 100%;
 }
 
 .reviews-item {
@@ -17,13 +18,11 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	border-radius: 20px;
+
 }
 
 .reviews-item:hover {
-	box-shadow: 0 0 20px 2px var(--accent-color-hover);
-	scale: 1.01;
-
-
+	box-shadow: inset 0 0 16px 1px var(--accent-color-hover);
 }
 
 .swiper-container li {
@@ -49,10 +48,8 @@
 	border: 1px solid var(--border-color);
 	border-radius: 20px;
 	overflow: hidden;
-
+	margin-bottom: 0.5px;
 }
-
-
 
 /*
 .reviews-item:nth-child(1) {
@@ -156,6 +153,9 @@
 
 @media screen and (min-width: 768px) {
 
+	.swiper-container {
+		padding: 0 8px;
+	}
 
 	.reviews-item {
 		display: flex;
@@ -173,6 +173,13 @@
 		padding: 18px;
 		border: 1px solid var(--border-color);
 		border-radius: 60px;
+	}
+
+	.reviews-item:hover {
+		box-shadow: 0 0 16px 1px var(--accent-color-hover);
+		scale: 1.01;
+	
+	
 	}
 
 }
