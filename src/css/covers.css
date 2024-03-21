@@ -136,19 +136,26 @@
 	stroke: #fafafa;
 	width: 24px;
 	height: 24px;
+	transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .swipe-btn:disabled {
 	border: 1px solid var(--border-color);
 }
 
+.swipe-btn:hover .btn-svg {
+	stroke: var(--accent-color);
+}
+
 .swipe-btn:hover {
+	border: 1px solid var(--accent-color-hover);
 	background-color: var(--cards);
 }
 
 .swipe-btn:disabled .btn-svg {
 	stroke: var(--border-color);
 }
+
 
 
 /** ============================================tablet style===================================**/
