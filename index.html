@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap"
       rel="stylesheet"
@@ -16,7 +17,7 @@
     <script type="module" crossorigin src="/teamwork-eighteen-js/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/teamwork-eighteen-js/assets/vendor-842a7ad1.js">
     <link rel="stylesheet" href="/teamwork-eighteen-js/assets/vendor-7c8ef494.css">
-    <link rel="stylesheet" href="/teamwork-eighteen-js/assets/index-e56dfb44.css">
+    <link rel="stylesheet" href="/teamwork-eighteen-js/assets/index-2f50c448.css">
   </head>
   <body>
     <header>
@@ -36,13 +37,13 @@
       </div>
       <div class="burger-menu" id="BurgerMenuId">
         <svg class="icon icon-menu-05" width="28" height="28">
-          <use href="/teamwork-eighteen-js/assets/symbol-defs-dd7a5c63.svg#icon-menu-05"></use>
+          <use href="/teamwork-eighteen-js/assets/icons-6d12d8a2.svg#icon-menu" />
         </svg>
       </div>
     </div>
 
     <div class="dropdown">
-      <h3><a href="#" class="menu-title" id="menuTitle">Menu</a></h3>
+      <h3 class="menu-title" id="menuTitle">Menu</h3>
       <ul class="dropdown-content" id="dropdownContent">
         <li class="dropdown-item">
           <a href="#projects" class="scroll">Projects</a>
@@ -53,7 +54,9 @@
         <li class="dropdown-item">
           <a href="#about" class="scroll">About me</a>
         </li>
-        <li class="dropdown-item"><a href="#faq" class="scroll">FAQ</a></li>
+        <li class="dropdown-item">
+          <a href="#faq" class="scroll">FAQ</a>
+        </li>
       </ul>
     </div>
 
@@ -63,7 +66,7 @@
   <nav class="nav-menu-mob" id="navMenu">
     <div class="close-menu" id="MenuCloseId">
       <svg class="icon icon-menu-x" width="28" height="28">
-        <use href="/teamwork-eighteen-js/assets/symbol-defs-dd7a5c63.svg#icon-x"></use>
+        <use href="/teamwork-eighteen-js/assets/icons-6d12d8a2.svg#icon-x" />
       </svg>
     </div>
 
@@ -739,6 +742,7 @@
 <section class="section" id="reviews">
   <div class="container swiper-review">
     <h2 class="reviews-section-title">Reviews</h2>
+    
     <div class="swiper-container">
       <ul class="reviews-list list swiper-wrapper"></ul>
     </div>
@@ -761,17 +765,18 @@
 
     </main>
     <footer>
-      <section class="section" id="work_together">
+      <section class="section-footer" id="work_together">
   <div class="container">
     <div class="seactionheader">
       <div class="seactionheaderline">
         <img class="logo" src="/teamwork-eighteen-js/assets/logo-42eff5b8.png" />
-        <span>Let's <span class="accenttext">work</span></span>
+        <h2>Let's <span class="accenttext">work</span></h2>
       </div>
       <div>
         <span>together</span>
       </div>
     </div>
+
     <form id="contactForm">
       <div class="inputsection">
         <div class="input-container">
@@ -798,20 +803,22 @@
       </div>
       <button class="btnsubmit" type="submit">Send</button>
     </form>
+
     <div class="contactarea">
       <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
       <a href="tel:+3801111111111">+380 11 1111 11 11</a>
     </div>
   </div>
 </section>
+
 <div id="modal" class="hidden">
   <div class="modal-container">
     <h3 id="modaltitle" class="title">
       Thank you for your interest in cooperation!
     </h3>
-    <a id="backdrop" class="backdrop"
-      ><svg>
-        <use class="icon-cross" href="/teamwork-eighteen-js/assets/icons-6d12d8a2.svg#icon-cross" />
+    <a id="backdrop" class="backdrop">
+      <svg>
+        <use class="icon-cross" href="/teamwork-eighteen-js/assets/icons-6d12d8a2.svg#icon-x" />
       </svg>
     </a>
     <p id="lowercase" class="lowercase">
