@@ -2,15 +2,15 @@
 @media screen and (min-width: 320px) and (max-width: 374px) {
     .hero-container {
         background-image:
-        url(../img/hero-background/Glass-effect.png);
+        url(../img/hero/background_tel.png);
         background-repeat: no-repeat; 
-        background-size: 50% 100%;
+        background-size: 80% 100%;
         background-position: left top;
         background-color:linear-gradient(90.11deg, #1C1D20 49.69%, #001958 67.71%, #0041E8 99.91%);
         width: 100%;
         height: 100%;
         margin: 0 auto;
-        padding: 0 16px 32px 0;
+        padding: 0 16px 32px 16px;
     }
 
   }
@@ -70,17 +70,16 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-name:hover,
-.social-name:active,
-.hero-email:hover,
-.hero-email:active,
+.hero-list-social:hover .social-name {
+    color:var(--main-text);
+}
+
 .hero-link-social:hover,
-.hero-link-social:active{
-    color:var(--accent-color-hover);
-    border-color: var(--accent-color-hover);
+.hero-email:hover {
+    box-shadow: 0 0 14px 2px var(--main-text);
 }
 
 .hero-email{
@@ -95,21 +94,21 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 @media screen and (min-width: 375px) {
     .hero-container {
         background-image:
-        url(../img/hero-background/Glass-effect.png);
+        url(../img/hero/background_tel.png);
         background-repeat: no-repeat; 
-        background-size: 50% 100%;
+        background-size: 75% 100%;
         background-position: left top;
         background-color:linear-gradient(90.11deg, #1C1D20 49.69%, #001958 67.71%, #0041E8 99.91%);
         width: 100%;
         height: 100%;
         margin: 0 auto;
-        padding: 0 0 32px 16px;
+        padding: 0 16px 32px 16px;
         max-width: 343px;
     }
 
@@ -134,8 +133,11 @@
     }
 
     .hero-container {
+        background-image: url(../img/hero/background_tablet.png); 
+        background-size: 70% 100%;
         max-width: 704px;
         padding-left: 32px;
+        padding-right: 32px;
     }
 }
 
@@ -146,6 +148,8 @@
     }
 
     .hero-container {
+        background-image: url(../img/hero/background_laptop.png); 
+        background-size: 50% 100%;
         max-width: 1376px;
     }
 
