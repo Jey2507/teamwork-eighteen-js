@@ -66,6 +66,10 @@
       display: flex;
       max-height: 500px;
     }
+
+    .scroll {
+      scroll-behavior: smooth;
+    }
   
 .nav-links{
     display: flex;
