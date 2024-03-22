@@ -2,7 +2,7 @@
 const navMenu = document.getElementById('navMenu');
 const toggleElement = document.getElementById('BurgerMenuId');
 const toggleCloseMenu = document.getElementById('MenuCloseId');
-const workSection = document.getElementById('projects');
+const workSection = document.getElementById('work_together');
 
 toggleElement.addEventListener('click', toggleMenu);
 toggleCloseMenu.addEventListener('click', closeMenu);
