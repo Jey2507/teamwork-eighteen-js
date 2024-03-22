@@ -12,6 +12,8 @@ document
   .querySelector('.tablet-order-button')
   .addEventListener('click', scrollToWork);
 
+document.getElementById("nav-button").addEventListener('click', scrollToWork);
+
 function toggleMenu() {
   navMenu.classList.toggle('active');
 }
@@ -31,6 +33,7 @@ function toggleDropdown(event) {
 }
 
 function scrollToWork() {
+  closeMenu()
   workSection.scrollIntoView({ behavior: 'smooth' });
 }
 
