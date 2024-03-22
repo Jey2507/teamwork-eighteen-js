@@ -177,9 +177,6 @@
 
 	.reviews-item:hover {
 		box-shadow: 0 0 16px 1px var(--accent-color-hover);
-		scale: 1.01;
-	
-	
 	}
 
 }

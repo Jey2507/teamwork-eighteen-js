@@ -1,4 +1,4 @@
-const form = document.getElementById('contactForm');
+const form = document.getElementById('contact-form');
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();
@@ -33,18 +33,18 @@ const modalTitle = document.querySelector('#modaltitle');
 const modalMessage = document.querySelector('#lowercase');
 
 function closeModal() {
-  modal.classList.remove('visible')
-  setTimeout(()=> {
+  modal.classList.remove('visible');
+  setTimeout(() => {
     modal.classList.add('hidden');
-  }, 250)
+  }, 250);
   document.body.style.overflow = '';
 }
 
 function showModal(title, message) {
   modal.classList.remove('hidden');
-  setTimeout(()=> {
+  setTimeout(() => {
     modal.classList.add('visible');
-  }, 10)
+  }, 10);
   modalTitle.textContent = title;
   modalMessage.textContent = message;
   document.body.style.overflow = 'hidden';
