@@ -63,6 +63,7 @@
   background-color: transparent;
   padding: 20px 0;
   margin-right: 32px;
+  margin-bottom: 4px;
   width: 390px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -123,13 +124,14 @@
   background-color: transparent;
   border-radius: 60px;
   border: 1px solid rgba(250, 250, 250, 0.2);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .link-footer:hover {
-  border: 1px solid rgba(250, 250, 250, 1);
+  box-shadow: 0 0 14px 2px var(--main-text);
 }
+
 
 .contactarea {
   display: flex;
@@ -302,7 +304,6 @@
   }
   .inputarea {
     width: 245px;
-    margin-bottom: 0;
   }
 
   #email:not(:placeholder-shown):invalid + .email-validation-msg::after {
@@ -346,7 +347,6 @@
   }
   .inputarea {
     width: 390px;
-    margin-bottom: 0;
   }
   .link-footer {
     font-size: 16px;
