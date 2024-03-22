@@ -134,6 +134,7 @@
 .contactarea {
   display: flex;
   gap: 8px;
+  margin-bottom: 32px;
 }
 .link-footer {
   font-size: 14px;
