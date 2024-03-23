@@ -109,7 +109,6 @@
     border-color: var(--accent-color-hover);
 }
 
-
 @media screen and (min-width: 768px) {
        
     .list-benefits {
@@ -127,9 +126,6 @@
 }
 
 
-
-
-
 @media screen and (min-width: 1440px) {
 
     .title-blok{
@@ -139,7 +135,6 @@
     .benefits {
         display: flex;
         flex-direction: row;
-                
     }
 
     .content-benefits{
@@ -150,7 +145,7 @@
     
     .list-benefits {    
         justify-content: flex-end;
-                 }
+    }
     
     .btn-benefits {
         margin-right: 520px;
