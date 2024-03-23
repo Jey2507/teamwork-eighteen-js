@@ -1,14 +1,14 @@
-<section class="section">
+<section class="section" id="about">
   <div class="container about-me-container">
     <h2 class="is-hidden">ABOUT ME</h2>
     <div class="introducing">
       <div class="about-me-header">
-        <h2 class="about-tittle">
+        <h3 class="about-tittle">
           I work with people all over the world to create impressive and
           <span class="functional">functional</span>
           <span class="websites">websites</span> that reflect each client's
           unique personality.
-        </h2>
+        </h3>
       </div>
       <div class="about-image-thumb">
         <img
@@ -18,8 +18,7 @@
               ./img/about_me/image_tel.jpg                   343w,
               ./img/about_me/image_tablet.jpg                704w,
               ./img/about_me/image_laptop.jpg                680w,
-              ./img/about_me/image_tel@2x.jpg                686w
-              ./img/about_me/image_tablet@2x.jpg             1408w,
+              ./img/about_me/image_tel@2x.jpg                686w,
               ./img/about_me/image_laptop@2x.jpg             1360w
               "
           sizes=" (min-width: 1440px) 680px, (min-width: 768px) 704px, (max-width: 767px) 343px"
@@ -110,47 +109,40 @@
       </ul>
     </div>
 
-    <div class="skills-container swiper-project">
-      <button
-        type="button"
-        class="swiper-skills-btn swiper-button-prev btn-prev"
-      >
-        <svg class="swipe-arrow swipe-arrow-right">
-          <use href="./img/icons.svg#icon-arrow-narrow-right" />
-        </svg>
-      </button>
-      <ul class="skills-list swiper-wrapper">
-        <li class="skill-item swiper-slide">
-          <p class="skill-text">HTML/CSS</p>
-        </li>
-        <li class="skill-item swiper-slide">
-          <p class="skill-text">JavaScript</p>
-        </li>
-        <li class="skill-item swiper-slide">
-          <p class="skill-text">React</p>
-        </li>
-        <li class="skill-item swiper-slide">
-          <p class="skill-text">Node.js</p>
-        </li>
-        <li class="skill-item swiper-slide">
-          <p class="skill-text">React Native</p>
-        </li>
-        <li class="skill-item swiper-slide">
-          <p class="skill-text">Soft skills</p>
-        </li>
-      </ul>
-
-      <button
-        type="button"
-        class="swiper-skills-btn swiper-button-next btn-next"
-      >
-        <svg class="swipe-arrow">
-          <use
-            class="swipe-arrow-icon"
-            href="./img/icons.svg#icon-arrow-narrow-right"
-          />
-        </svg>
-      </button>
+    <div class="swiper-about-container">
+      <div class="swiper-about swiper">
+        <ul class="skills-list swiper-wrapper">
+          <li class="skill-item swiper-slide active-slide">
+            <p class="skill-text">HTML/CSS</p>
+          </li>
+          <li class="skill-item swiper-slide">
+            <p class="skill-text">JavaScript</p>
+          </li>
+          <li class="skill-item swiper-slide">
+            <p class="skill-text">React</p>
+          </li>
+          <li class="skill-item swiper-slide">
+            <p class="skill-text">Node.js</p>
+          </li>
+          <li class="skill-item swiper-slide">
+            <p class="skill-text">React Native</p>
+          </li>
+          <li class="skill-item swiper-slide">
+            <p class="skill-text">Soft skills</p>
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="swiper-skills-btn swiper-button-next btn-next"
+        >
+          <svg class="swipe-arrow">
+            <use
+              class="swipe-arrow-icon"
+              href="./img/icons.svg#icon-arrow-narrow-right"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>

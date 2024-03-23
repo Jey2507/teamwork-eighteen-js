@@ -1,60 +1,61 @@
-<header class="header container">
-    <div class="tablet-desctop-elements">
-      <div class="logo">
+<section class="header-section container">
+  <div class="tablet-desctop-elements">
+    <div class="logo-header">
+      <div class="text-jefferson">
         <img
-            class="logo-img"
-            srcset="./img/header/logo@2x.png 2x"
-            src="./img/header/logo.png"
-            alt="logo image"
-            width="80"
-            height="80"
-          />
-          <svg class="icon icon-jefferson"><use href="./img/header/symbol-defs.svg#icon-jefferson"></use></svg>     
+          class="logo-img"
+          srcset="./img/header/logo@2x.png 2x"
+          src="./img/header/logo.png"
+          alt="logo image"
+          width="80"
+          height="80"
+        />
+        <p>jefferson*</p>
       </div>
-  
-      <div class="dropdown">
-        <a href="#" class="menu-title" id="menuTitle">Menu</a>
-        <div class="dropdown-content" id="dropdownContent">
-          <a href="#about">About me</a>
-          <a href="#benefits">Benefits</a>
-          <a href="#projects">Projects</a>
-          <a href="#faq">FAQ</a>
-        </div>
+      <div class="burger-menu" id="BurgerMenuId">
+        <svg class="icon icon-menu-05" width="28" height="28">
+          <use href="./img/icons.svg#icon-menu" />
+        </svg>
       </div>
-  
-      <button type="button" class="tablet-order-button" onclick="scrollToWork()">Order the project</button>
-
-    </div>
- 
-
-
-    <div class="burger-menu" id="BurgerMenuId" onclick="toggleMenu()">
-      <svg class="icon icon-menu-05" width="28" height="28"><use href="./img/header/symbol-defs.svg#icon-menu-05"></use></svg> 
-      
     </div>
 
+    <div class="dropdown">
+      <h3 class="menu-title" id="menuTitle">Menu</h3>
+      <ul class="dropdown-content" id="dropdownContent">
+        <li class="dropdown-item">
+          <a href="#projects" class="scroll">Projects</a>
+        </li>
+        <li class="dropdown-item">
+          <a href="#benefits" class="scroll">Benefits</a>
+        </li>
+        <li class="dropdown-item">
+          <a href="#about" class="scroll">About me</a>
+        </li>
+        <li class="dropdown-item">
+          <a href="#faq" class="scroll">FAQ</a>
+        </li>
+      </ul>
+    </div>
 
-        
-    <nav class="nav-menu" id="navMenu">
+    <button class="tablet-order-button">Order the project</button>
+  </div>
 
+  <div class="nav-menu-mob" id="navMenu">
       <div class="close-menu" id="MenuCloseId">
-        <svg class="icon icon-menu-x" width="28" height="28"><use href="./img/header/symbol-defs.svg#icon-x"></use></svg>
-        
+        <svg class="icon icon-menu-x" width="28" height="28">
+          <use href="./img/icons.svg#icon-x" />
+        </svg>
       </div>
 
-  
       <div class="nav-links">
-        <a href="#about">About me</a>
-        <a href="#benefits">Benefits</a>
-        <a href="#projects">Projects</a>
-        <a href="#faq">FAQ</a>
+        <a href="#about" class="nav-link">About me</a>
+        <a href="#benefits" class="nav-link">Benefits</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#faq" class="nav-link">FAQ</a>
       </div>
-     
-      <button type="button" class="order-button" id="nav-button">Order the project</button>
-    
-    </nav>
-  </header>
-  
 
-
-
+      <button type="button" class="order-button" id="nav-button">
+        Order the project
+      </button>
+  </div>
+</section>

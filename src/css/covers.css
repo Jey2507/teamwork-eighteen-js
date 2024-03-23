@@ -9,20 +9,20 @@
 
 .reviews-list {
 	margin-bottom: 32px;
+	height: 100%;
 }
 
 .reviews-item {
-	display: none;
 	max-width: 343px;
 	box-sizing: border-box;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	border-radius: 20px;
+
 }
 
 .reviews-item:hover {
-	box-shadow: 0 0 20px 2px var(--accent-color-hover);
-	scale: 1.04;
-	border-radius: 20px;
+	box-shadow: inset 0 0 16px 1px var(--accent-color-hover);
 }
 
 .swiper-container li {
@@ -44,10 +44,11 @@
 .reviews-item-box {
 	position: relative;
 	height: 302px;
-	display: inline-block;
 	padding: 32px 24px 32px 24px;
 	border: 1px solid var(--border-color);
 	border-radius: 20px;
+	overflow: hidden;
+	margin-bottom: 0.5px;
 }
 
 /*
@@ -80,6 +81,10 @@
 	font-weight: 500;
 	line-height: 1.5;
 	text-align: left;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 
 }
 
@@ -148,6 +153,10 @@
 
 @media screen and (min-width: 768px) {
 
+	.swiper-container {
+		padding: 0 8px;
+	}
+
 	.reviews-item {
 		display: flex;
 		width: calc((100% - 16px) / 2);
@@ -164,6 +173,10 @@
 		padding: 18px;
 		border: 1px solid var(--border-color);
 		border-radius: 60px;
+	}
+
+	.reviews-item:hover {
+		box-shadow: 0 0 16px 1px var(--accent-color-hover);
 	}
 
 }

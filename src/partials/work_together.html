@@ -1,59 +1,60 @@
-<section>
-  <div class="container">
-    <div class="seactionheader">
-      <div class="seactionheaderline">
-        <img class="logo" src="./img/header/logo.png" />
-        <span>Let's <span class="accenttext">work</span></span>
+<section class="section-footer container" id="work_together">
+  <div>
+      <div class="footer-container">
+        <img class="logo-footer" src="./img/header/logo.png" width="44" alt="logo-footer"/>
+        <h2 class="title-footer">Let's <span class="accenttext">work</span></h2>
       </div>
-      <div>
-        <span>together</span>
-      </div>
-    </div>
-    <form id="contactForm">
-      <div class="inputsection">
-        <input
-          type="email"
-          class="inputarea"
-          name="email"
-          id="email"
-          required
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-          placeholder="clients@gmail.com"
-        />
+      <h2 class="title-footer together">together</h2>
+
+    <form id="contact-form" class="form-footer">
+        <div class="input-container">
+          <input
+            type="email"
+            class="inputarea"
+            name="email"
+            id="email"
+            required
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            placeholder="clients@gmail.com"
+          />
+          <div class="email-validation-msg"></div>
+        </div>
+      <div class="input-container">
         <input
           type="text"
           class="inputarea"
           name="comments"
           id="comments"
-          required
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
           placeholder="comments"
         />
       </div>
       <button class="btnsubmit" type="submit">Send</button>
     </form>
+
     <div class="contactarea">
-      <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
-      <a href="tel:+3801111111111">+380 11 1111 11 11</a>
+      <a class="link-footer" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+      <a class="link-footer" href="tel:+3801111111111">+380 11 1111 11 11</a>
+    </div>
+
+    <div id="modal" class="hidden modal-footer">
+      <div id="backdrop" class="modal-container">
+            <a class="backdrop">
+          <svg class="icon-cross" >
+            <use href="./img/icons.svg#icon-x" />
+          </svg>
+        </a>
+        <div class="content-modal">
+          <h2 id="modaltitle" class="title">
+            Thank you for your interest in cooperation!
+          </h2>
+          <p id="lowercase" class="lowercase">
+            The manager will contact you shortly to discuss further details and
+            opportunities for cooperation. Please stay in touch.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<div id="modal" style="display: none">
-  <div class="modal-container">
-    <h3 id="modaltitle" class="title">
-      Thank you for your interest in cooperation!
-    </h3>
-    <a id="backdrop" class="backdrop"
-      ><svg class="backdrop">
-        <use
-          class="icon-cross"
-          href="./img/icons.svg#icon-cross"
-        />
-</svg>
-    </a>
-    <p id="lowercase" class="lowercase">
-      The manager will contact you shortly to discuss further details and
-      opportunities for cooperation. Please stay in touch.
-    </p>
-  </div>
-</div>
+
+

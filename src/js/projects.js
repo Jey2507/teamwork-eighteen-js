@@ -4,7 +4,7 @@ import 'swiper/css';
 const prevButton = document.querySelector('.pr-btn-prev');
 const nextButton = document.querySelector('.pr-btn-next');
 
-const swiperProjects = new Swiper('.swiper', {
+const swiperProjects = new Swiper('.swiper-projects', {
   preventInteractionOnTransition: true,
   navigation: {
     nextEl: '.swiper-button-next',

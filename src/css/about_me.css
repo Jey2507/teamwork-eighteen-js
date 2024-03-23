@@ -41,6 +41,7 @@
 }
 
 /* ACCORDION */
+
 .about-me-list {
   display: flex;
   flex-direction: column;
@@ -61,21 +62,7 @@
   text-transform: uppercase;
   color: var(--section-text);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.accordion-btn {
-  width: 36px;
-  height: 36px;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 100px;
-  padding: 9px;
-  background-color: transparent;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.accordion-svg {
-  width: 18px;
-  height: 18px;
+  cursor: pointer;
 }
 
 .ac-list-item {
@@ -100,27 +87,38 @@
 .ac-side-text-one {
   margin-bottom: 20px;
 }
-
-.accordion-svg {
-  stroke: var(--main-text);
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.accordion-btn {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
+  padding: 9px;
+  background-color: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-active .accordion-svg,
+.accordion-svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--main-text);
+  transition: stroke, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .is-active .about-me-ac-header,
 .about-me-ac-header:hover,
-.about-me-ac-header:active,
-.accordion-svg:hover,
-.accordion-svg:active {
+.about-me-ac-header:active {
   color: var(--accent-color-hover);
-  stroke: var(--accent-color-hover);
 }
 
 .accordion-btn:hover,
 .accordion-btn:active,
 .is-active .accordion-btn {
   border: 1px solid var(--accent-color-hover);
+}
+
+.accordion-btn:hover .accordion-svg,
+.is-active .accordion-svg {
+  stroke: var(--accent-color-hover);
 }
 
 .is-active .accordion-svg {
@@ -132,25 +130,34 @@
   transition-property: height, visibility;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /*  SKILLS SWIPER */
 
-.skills-container {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  justify-content: space-between;
-  gap: 55px;
+.swiper-about-container {
+  position: relative;
 }
 
-.skills-list.swiper-wrapper {
-  max-width: 260px;
+.swiper-about.swiper {
+  width: 260px;
+  margin: 0;
+  position: static;
 }
 
 .swiper-skills-btn {
-  width: 28px;
-  height: 28px;
-  background-color: transparent;
-  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swipe-arrow {
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swiper-skills-btn:hover .swipe-arrow,
+.swiper-skills-btn:focus .swipe-arrow {
+  stroke: var(--accent-color);
 }
 
 .skill-item.swiper-slide {
@@ -162,6 +169,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skill-item:hover {
+  box-shadow: inset 0 0 15px 5px #0042e850;
+  border: 1px solid #0042e850;
+  cursor: pointer;
+}
+
+.active-slide {
+  background-color: var(--accent-color);
+  border: none;
 }
 
 .skill-text {
@@ -172,19 +192,18 @@
   color: var(--main-text);
 }
 
-.skill-item:hover,
-.skill-item:focus {
-  background-color: var(--accent-color);
+.swiper-skills-btn {
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
   border: none;
+  padding: 0;
 }
 
 .swipe-arrow {
-  width: 28px;
-  height: 28px;
+  width: 100%;
+  height: 100%;
   stroke: #3b3b3b;
-}
-.swipe-arrow-right{
-transform: scale(-1, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -224,17 +243,8 @@ transform: scale(-1, 1);
     margin-bottom: 4px;
   }
 
-  .skills-container {
-    gap: 64px;
-  }
-
-  .skills-list.swiper-wrapper {
-    max-width: 600px;
-  }
-
-  .swiper-skills-btn {
-    width: 40px;
-    height: 40px;
+  .swiper-about.swiper {
+    width: 600px;
   }
 
   .skill-item.swiper-slide {
@@ -243,10 +253,10 @@ transform: scale(-1, 1);
   }
 
   .skill-text {
-    font-size: 20px;
+    font-size: 16px;
   }
 
-  .swipe-arrow {
+  .swiper-skills-btn {
     width: 40px;
     height: 40px;
   }
@@ -278,11 +288,7 @@ transform: scale(-1, 1);
     margin-bottom: 20px;
   }
 
-  .skills-container {
-    gap: 72px;
-  }
-
-  .skills-list.swiper-wrapper {
-    max-width: 1312px;
+  .swiper-about.swiper {
+    width: 1200px;
   }
 }
