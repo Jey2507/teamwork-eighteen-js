@@ -1,0 +1,212 @@
+/* Header Styles */
+  .header-section {
+    position: absolute;
+    top: 32px;
+    left: 16px;
+    right: 16px;
+    height: 80px;
+    background-color: transparent;
+    display: block;
+  }
+  .menu-title{
+    font-size: 16px;
+    text-decoration: underline;
+  }
+
+  .icon-menu-x {
+    stroke: #FAFAFA;
+  }
+  
+  .tablet-order-button {
+    display: none;
+  }
+  .dropdown{
+    display: none;
+  }
+  .dropdown-item{
+    margin-bottom: 5px;
+  }
+  .logo-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .text-jefferson{
+    display: flex;
+    gap: 8px;
+  }
+  
+  .logo-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .text-nav-menu{
+    font-size: 16px;
+  }
+  .nav-menu-mob{
+    background-color: #1C1D20;
+    background-image:
+    url(../img/header/glass-effect.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(100%);
+    transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-menu-mob.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    overflow-y: auto;
+}
+    
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    margin-top: 50%;
+}
+   
+  .nav-links a {
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+  }
+  
+  .order-button{
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    border: none;
+    border-radius: 60px;
+    padding: 14px 31px;
+    width: 164px;
+    height: 45px;
+    color: #FAFAFA;
+    background-color: var(--accent-color-hover);
+    text-align: center; 
+    margin-bottom: 64px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+ 
+    .burger-menu {
+      display: block;
+    }
+        
+      
+  
+    .close-menu {
+      display: block;
+      position: absolute;
+      top: 32px;
+      right: 16px;
+      cursor: pointer;
+    }
+  
+    .no-scroll{
+      overflow: hidden;
+    }
+    .menu-title{
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .scroll,
+    .nav-link{
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .menu-title:hover,
+    .menu-title:active,
+    .scroll:hover,
+    .scroll:active,
+    .nav-link:hover,
+    .nav-link:active{
+      color: var(--accent-color-hover);
+    }
+
+/* ============== HEADER TABLET STYLES ============== */
+
+@media screen and (min-width: 768px) {
+    .header-section{
+      display: flex;
+    }
+
+    .menu-title {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .tablet-desctop-elements {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .nav-menu-mob {      
+        display: none;
+    }
+
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        align-items: center;
+      
+    }
+
+    .dropdown-content {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+        margin-top: 32px;
+        transition: max-height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       }
+  
+    .tablet-order-button {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: -0.02em;
+        border: none;
+        border-radius: 60px;
+        padding: 14px 31px;
+        width: 164px;
+        height: 45px;
+        color: #FAFAFA;
+        background-color: var(--accent-color-hover);
+        text-align: center; 
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .tablet-order-button:hover,
+    .tablet-order-button:active{
+      box-shadow: 0 0 20px 2px var(--accent-color-hover);
+    }
+}
+
+
